@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1436957398576108}
+  m_IsPrefabParent: 1
+--- !u!1 &1436957398576108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4124890827085424}
+  - component: {fileID: 114097981752024318}
+  - component: {fileID: 114448391647852298}
+  - component: {fileID: 114146780445387444}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4124890827085424
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1436957398576108}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114097981752024318
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1436957398576108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0a87409985d541bfbd134db0351692c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boardScript: {fileID: 0}
+  playerHealth: 100
+  mapSize: 80
+  playersTurn: 1
+--- !u!114 &114146780445387444
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1436957398576108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf7300609aaa4e3bbd45c9f6367708f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seed: 
+  smoothLevel: 5
+  randomFillPercent: 52
+--- !u!114 &114448391647852298
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1436957398576108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f06c7eeb7124848f9a09670063811dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  mapGenerator: {fileID: 0}
+  columns: 16
+  rows: 16
+  foodCount:
+    maximum: 8
+    minimum: 3
+  wallCount:
+    maximum: 7
+    minimum: 4
+  exit:
+  - {fileID: 1180206265571216, guid: 885ca0b9eb126409a92849522333e17f, type: 2}
+  player: {fileID: 1768708494300930, guid: cdaaa94848d634b8c95db9e721c35ad2, type: 2}
+  floorTiles:
+  - {fileID: 1746339235243440, guid: 3f40a3c222048453eb2599baad87df12, type: 2}
+  - {fileID: 1321616096489970, guid: 2e004281b3c2e4b2aa20e5820d34c097, type: 2}
+  foodTiles:
+  - {fileID: 1741505592017278, guid: d2e6b030a065a44949ded10c8760e55f, type: 2}
+  - {fileID: 1553620946227194, guid: ca177d70cd1514f9eac654369fe31769, type: 2}
+  - {fileID: 1899189179898106, guid: 6af0f295285b9464b80834ae3b254f2c, type: 2}
+  - {fileID: 1362444759551944, guid: f0210612ccda74ec980aaa80de21df91, type: 2}
+  - {fileID: 1055067645871526, guid: 5422545d96dd04c12a2385cd901b7c2c, type: 2}
+  enmeyTiles:
+  - {fileID: 1978216044089814, guid: 1a020b1b33adf412e9e00b6ea159b4e6, type: 2}
+  - {fileID: 1774073386206978, guid: ef8a1bd20c1e84060ab02132ea7c347a, type: 2}
+  - {fileID: 1369392993802238, guid: cc70eb14efccb428dbf8aede36ff0560, type: 2}
+  wallTiles:
+  - {fileID: 1768142151568840, guid: 70ee2b89cc150402393527c018327c5f, type: 2}
+  - {fileID: 1330902677574734, guid: d8ac69d9b5e8a43f7943fd82bcec9c6f, type: 2}
+  - {fileID: 1614206341098582, guid: d24619d54e8ea4df3bc5d1730a3e772c, type: 2}
+  roadTiles:
+  - {fileID: 1374484985355394, guid: 06b3f881e8c954254bbbd818632d3c32, type: 2}
+  - {fileID: 1766440076977108, guid: e15e0f91dba834842b97be39b3b8d3d5, type: 2}
+  waterTile: {fileID: 1788154617825678, guid: e09add6a9c5ef45b8bf14a7e8844c45c, type: 2}
+  centerX: 0
+  centerY: 0
