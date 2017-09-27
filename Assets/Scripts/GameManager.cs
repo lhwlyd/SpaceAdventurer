@@ -23,14 +23,13 @@ public class GameManager : MonoBehaviour {
 	private List<Enemy> enemies;
 	private bool enemiesMoving;
 
-	public GameObject miniMap;
-
-
 	//UI control
 	public float levelStartingDelay = 2f;
 	private Text levelText;
 	private GameObject levelImage;
 	private bool doingSetup;
+
+	public GameObject miniMap;
 
 
 	// Use this for initialization
@@ -56,17 +55,19 @@ public class GameManager : MonoBehaviour {
 		levelText = GameObject.Find ("LevelText").GetComponent<Text>();
 		levelText.text = "Night " + level;	
 		levelImage.SetActive(true);
+		miniMap = GameObject.Find ("MiniMap");
+		miniMap.SetActive (false);
 		Invoke ("HideLevelImage", levelStartingDelay);
 
 		enemies.Clear ();
 
-		//miniMap.transform.position = new Vector3 (mapSize/2, mapSize/2, -10);
 		boardScript.SetUpScene (level, mapSize);
 	}
 
 	private void HideLevelImage(){
 		levelImage.SetActive (false);
 		doingSetup = false;
+		miniMap.SetActive (true);
 	}
 
 	public void GameOver(){
