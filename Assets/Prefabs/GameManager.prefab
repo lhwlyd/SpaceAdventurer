@@ -54,9 +54,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boardScript: {fileID: 0}
+  turnDelay: 0.1
   playerHealth: 100
   mapSize: 80
   playersTurn: 1
+  levelStartingDelay: 2
+  miniMap: {fileID: 1965617957775970, guid: 32c820e005f7d4fb4b8c6aee3c04b10e, type: 2}
 --- !u!114 &114146780445387444
 MonoBehaviour:
   m_ObjectHideFlags: 1

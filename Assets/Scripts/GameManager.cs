@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject miniMap;
 
-
 	// Use this for initialization
 	void Awake () {
 
@@ -56,7 +55,7 @@ public class GameManager : MonoBehaviour {
 		levelText.text = "Night " + level;	
 		levelImage.SetActive(true);
 		miniMap = GameObject.Find ("MiniMap");
-		miniMap.SetActive (false);
+		//miniMap.SetActive (false);
 		Invoke ("HideLevelImage", levelStartingDelay);
 
 		enemies.Clear ();
@@ -67,7 +66,6 @@ public class GameManager : MonoBehaviour {
 	private void HideLevelImage(){
 		levelImage.SetActive (false);
 		doingSetup = false;
-		miniMap.SetActive (true);
 	}
 
 	public void GameOver(){
@@ -78,6 +76,9 @@ public class GameManager : MonoBehaviour {
 
 
 	void Update(){
+
+		//miniMap.enabled = !miniMap.GetComponent<Renderer>().enabled;
+
 		if(playersTurn || enemiesMoving || doingSetup){
 			return;
 		}
