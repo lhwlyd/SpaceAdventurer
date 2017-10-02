@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class LightController : MonoBehaviour {
 
-	public GameObject player;
+    public Transform playerControllerTransform;
+    public GameObject player;
 
 	private Vector3 offset;
 
@@ -12,15 +13,16 @@ public class LightController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start() {
-		offset = new Vector3(0,0,-3);
+		//offset = new Vector3(0,0,-3);
 		characterLight = GetComponent<Light> ();
-		UpdatePlayer ();
+        //playerControllerTransform = GameObject.FindGameObjectWithTag("PlayerPositionController").transform;
+        UpdatePlayer();
 	}
 
 	// Late update is called afte update every time.
 	void Update () {
-		transform.position = player.transform.position + offset;
-		characterLight.spotAngle = (int)(0.2*player.GetComponent<Player>().hp) + 120;
+        //transform.position = playerControllerTransform.transform.position + offset;
+		characterLight.spotAngle = (int)(0.2 * player.GetComponent<Player>().hp) + 120;
 	}
 
 	void UpdatePlayer(){

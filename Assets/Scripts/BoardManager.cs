@@ -9,6 +9,8 @@ public class BoardManager : MonoBehaviour {
 	public GameManager gameManager;
 	public MapGenerator mapGenerator;
 
+    public Radar ppcRadar; // player position controller's radar
+
 	[Serializable]
 	public class Count{
 
@@ -128,15 +130,23 @@ public class BoardManager : MonoBehaviour {
 			Coord randomPosition = RandomPosition ();
 			GameObject tileChosen = tileArray [Random.Range (0, tileArray.Length)];
 
-			Instantiate (tileChosen, new Vector3(randomPosition.tileX,randomPosition.tileY, 0f), Quaternion.identity);
+            GameObject tileGenerated = Instantiate (tileChosen, new Vector3(randomPosition.tileX,randomPosition.tileY, 0f), Quaternion.identity) as GameObject;
+
+            // add the exit to radar's detectable tile set.
+            if( tileArray[0].Equals(exit[0]) ){
+				ppcRadar = GameObject.Find("PlayerPositionController").GetComponent<Radar>();
+
+                ppcRadar.AddToTrackedObjects(tileGenerated);
+
+            }
+			
 
 		}
 
 	}
 
 	public void SetUpScene(int level, int mapSize){
-
-	
+    	
 		mapGenerator = GetComponentInParent<MapGenerator> ();
 		
 		BoardSetup (mapSize);
@@ -147,12 +157,13 @@ public class BoardManager : MonoBehaviour {
 		LayoutObjectAtRandom (foodTiles, foodCount.minimum, foodCount.maximum);
 
 		int enemyCount = 10;//(int)Mathf.Pow (level, 2f);
+
 		LayoutObjectAtRandom (enmeyTiles, enemyCount, enemyCount);
 
-		LayoutObjectAtRandom (exit, 1, 1);
+        Instantiate(player, new Vector3(centerX, centerY, 0f), Quaternion.identity);
 
+		LayoutObjectAtRandom(exit, 1, 1);
 
-		Instantiate (player, new Vector3(centerX, centerY, 0f), Quaternion.identity);
 	}
 
 	//Utility
