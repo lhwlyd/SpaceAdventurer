@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4188166337522746}
   - component: {fileID: 212182764144855606}
   - component: {fileID: 61061149133574618}
+  - component: {fileID: 114679461231122192}
   m_Layer: 8
   m_Name: Wall2
   m_TagString: Obstacle
@@ -66,6 +67,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114679461231122192
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1330902677574734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3617b05528cc744358885dbd051f13a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerDamage: 1
 --- !u!212 &212182764144855606
 SpriteRenderer:
   m_ObjectHideFlags: 1

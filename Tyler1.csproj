@@ -122,7 +122,7 @@
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerPositionControllerScript.cs" />
     <Compile Include="Assets\Scripts\Radar.cs" />
-    <Compile Include="Assets\Scripts\Temp.cs" />
+    <Compile Include="Assets\Scripts\Wall.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Editor\CM Tools\TileMasterReadme.txt" />

@@ -51,13 +51,15 @@ public class Player : MovingObjects {
 			vertical = 0;
 
 		if(horizontal!=0 || vertical != 0){
-			AttemptMove<Temp> (horizontal, vertical);
+            AttemptMove<Wall> (horizontal, vertical);
 		}
 
 	}
 
 	protected override void OnCantMove<T> (T component){
-		
+        Wall hitWall = component as Wall;
+
+        hitWall.TakeDamage();
 	}
 
 	private void Restart(){

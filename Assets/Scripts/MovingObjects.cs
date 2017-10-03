@@ -6,7 +6,7 @@ public abstract class MovingObjects : MonoBehaviour {
 
 
 	//The time it takes for this object to move
-	public float moveTime = 0.1f;
+	public float moveTime = 0.01f;
 	public LayerMask blockingLayer;
 
 

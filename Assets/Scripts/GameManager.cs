@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour {
 
 	public int playerHealth = 100;
 
-	public int mapSize = 20;
+	[HideInInspector]public int mapSize = 30;
 
 	[HideInInspector]public bool playersTurn = false;
 
@@ -58,7 +58,9 @@ public class GameManager : MonoBehaviour {
 		//miniMap.SetActive (false);
 		Invoke ("HideLevelImage", levelStartingDelay);
 
-		enemies.Clear ();
+        enemies.Clear();
+
+        mapSize = level * 5 + 30;
 
 		boardScript.SetUpScene (level, mapSize);
 	}

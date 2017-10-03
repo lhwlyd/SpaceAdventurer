@@ -56,7 +56,7 @@ MonoBehaviour:
   boardScript: {fileID: 0}
   turnDelay: 0.1
   playerHealth: 100
-  mapSize: 80
+  mapSize: 0
   playersTurn: 1
   levelStartingDelay: 2
   miniMap: {fileID: 1965617957775970, guid: 32c820e005f7d4fb4b8c6aee3c04b10e, type: 2}
@@ -87,6 +87,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
   mapGenerator: {fileID: 0}
+  ppcRadar: {fileID: 0}
   columns: 16
   rows: 16
   foodCount:
@@ -107,10 +108,10 @@ MonoBehaviour:
   - {fileID: 1899189179898106, guid: 6af0f295285b9464b80834ae3b254f2c, type: 2}
   - {fileID: 1362444759551944, guid: f0210612ccda74ec980aaa80de21df91, type: 2}
   - {fileID: 1055067645871526, guid: 5422545d96dd04c12a2385cd901b7c2c, type: 2}
-  enmeyTiles:
-  - {fileID: 1978216044089814, guid: 1a020b1b33adf412e9e00b6ea159b4e6, type: 2}
-  - {fileID: 1774073386206978, guid: ef8a1bd20c1e84060ab02132ea7c347a, type: 2}
+  enemyTiles:
   - {fileID: 1369392993802238, guid: cc70eb14efccb428dbf8aede36ff0560, type: 2}
+  - {fileID: 1774073386206978, guid: ef8a1bd20c1e84060ab02132ea7c347a, type: 2}
+  - {fileID: 1978216044089814, guid: 1a020b1b33adf412e9e00b6ea159b4e6, type: 2}
   wallTiles:
   - {fileID: 1768142151568840, guid: 70ee2b89cc150402393527c018327c5f, type: 2}
   - {fileID: 1330902677574734, guid: d8ac69d9b5e8a43f7943fd82bcec9c6f, type: 2}
