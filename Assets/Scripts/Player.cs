@@ -13,9 +13,13 @@ public class Player : MovingObjects {
 	private Animator animator;
 	[HideInInspector]public int hp;
 
+    public Rigidbody2D rb2d;
 
-	//UI control
-	public Text foodText;
+    //UI control
+    public Text foodText;
+
+
+    public float speed;
 
 	// Use this for initialization
 	protected override void Start () {
@@ -27,6 +31,8 @@ public class Player : MovingObjects {
 
 		foodText.text = "Torch Light : " + hp;
 
+        rb2d = this.GetComponent<Rigidbody2D>();
+
 		base.Start ();
 	}
 
@@ -35,8 +41,8 @@ public class Player : MovingObjects {
 	}
 
 	// Update is called once per frame
-	void Update () {
-
+	void FixedUpdate () {
+		/*
 		if (!GameManager.instance.playersTurn) {
 			return;
 		}
@@ -53,6 +59,24 @@ public class Player : MovingObjects {
 		if(horizontal!=0 || vertical != 0){
             AttemptMove<Wall> (horizontal, vertical);
 		}
+		*/
+
+		//Store the current horizontal input in the float moveHorizontal.
+		float moveHorizontal = Input.GetAxis("Horizontal");
+
+		//Store the current vertical input in the float moveVertical.
+		float moveVertical = Input.GetAxis("Vertical");
+
+        if (moveHorizontal - Mathf.Abs(moveVertical) < Mathf.Epsilon){
+            moveHorizontal *= 0.71f;
+            moveVertical *= 0.71f;
+        }
+
+		//Use the two store floats to create a new Vector2 variable movement.
+		Vector2 velocity = speed * new Vector2(moveHorizontal, moveVertical);
+
+		//Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
+        rb2d.MovePosition(rb2d.position + velocity * Time.deltaTime);
 
 	}
 
