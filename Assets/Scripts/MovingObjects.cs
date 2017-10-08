@@ -6,17 +6,17 @@ public abstract class MovingObjects : MonoBehaviour {
 
 
 	//The time it takes for this object to move
-	public float moveTime = 0.01f;
+	public float moveTime = 0.5f;
 	public LayerMask blockingLayer;
 
 
-	private BoxCollider2D boxCollider;
+    private CircleCollider2D circleCollider2d;
 	private Rigidbody2D rb2D;
 	private float inverseMoveTime;
 
 	// Use this for initialization
 	protected virtual void Start () {
-		boxCollider = GetComponent<BoxCollider2D> ();
+        circleCollider2d = GetComponent<CircleCollider2D> ();
 		rb2D = GetComponent<Rigidbody2D> ();
 		inverseMoveTime = 1f / moveTime;
 	}
@@ -37,16 +37,16 @@ public abstract class MovingObjects : MonoBehaviour {
 	}
 
 
-	protected bool Move( int xDir, int yDir, out RaycastHit2D hit){
+	protected bool Move( float xDir, float yDir, out RaycastHit2D hit){
 		Vector2 start = transform.position;
 		Vector2 end = start + new Vector2 (xDir, yDir);
 
-		boxCollider.enabled = false;
+		circleCollider2d.enabled = false;
 		hit = Physics2D.Linecast (start, end, blockingLayer);
-		boxCollider.enabled = true;
+		circleCollider2d.enabled = true;
 
 		if (hit.transform == null) {
-			StartCoroutine (SmoothMovement (end));
+			//StartCoroutine (SmoothMovement (end));
 			return true;
 		}
 
@@ -54,8 +54,8 @@ public abstract class MovingObjects : MonoBehaviour {
 
 	}
 
-	protected virtual void AttemptMove<T> (int xDir, int yDir) where T : Component{
-		//hit also get updated in the move method
+    protected virtual void AttemptMove<T> (float xDir, float yDir) where T : Component{
+		//hit also get updated in the move method since there's an out param
 		RaycastHit2D hit;
 		bool canMove = Move ( xDir, yDir, out hit);
 

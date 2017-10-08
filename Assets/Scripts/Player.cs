@@ -8,7 +8,7 @@ public class Player : MovingObjects {
 
 	public int attackDamage = 1;
 	public int healthPerFood = 25;
-	public float restartLevelDelay = 1f;
+	public float restartLevelDelay = 2f;
 
 	private Animator animator;
 	[HideInInspector]public int hp;
@@ -67,16 +67,23 @@ public class Player : MovingObjects {
 		//Store the current vertical input in the float moveVertical.
 		float moveVertical = Input.GetAxis("Vertical");
 
+
         if (moveHorizontal - Mathf.Abs(moveVertical) < Mathf.Epsilon){
             moveHorizontal *= 0.71f;
             moveVertical *= 0.71f;
         }
 
+
 		//Use the two store floats to create a new Vector2 variable movement.
 		Vector2 velocity = speed * new Vector2(moveHorizontal, moveVertical);
 
+        /*
 		//Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
         rb2d.MovePosition(rb2d.position + velocity * Time.deltaTime);
+        */
+
+
+        rb2d.AddForce(velocity);
 
 	}
 
@@ -103,7 +110,11 @@ public class Player : MovingObjects {
 	private void OnTriggerEnter2D (Collider2D other){
 		if(other.tag == "Exit"){
 			Invoke ("Restart", restartLevelDelay);
+
+            IEnumerator exitCoroutine = MoveToExit(other.gameObject.transform);
+
 			enabled = false;
+
 		} else if ( other.tag == "Torch"){
 			hp += healthPerFood;
 
@@ -115,7 +126,13 @@ public class Player : MovingObjects {
 			
 	}
 
-	protected override void AttemptMove<T>(int xDir, int yDir){
+    // The player is sucked into the wormhole!!!
+    IEnumerator MoveToExit(Transform exitTransform){
+
+        yield;
+    }
+
+    protected override void AttemptMove<T>(float xDir, float yDir){
 		hp--;
 
 		foodText.text = "Torch Light : " + hp;
