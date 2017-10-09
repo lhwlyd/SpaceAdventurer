@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212627535030789214}
   - component: {fileID: 114849229951689352}
   - component: {fileID: 58715719979457740}
+  - component: {fileID: 114240503302368330}
   m_Layer: 0
   m_Name: Exit
   m_TagString: Exit
@@ -116,7 +117,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3.140625
+  m_Radius: 1
 --- !u!108 &108132743439119292
 Light:
   m_ObjectHideFlags: 1
@@ -153,6 +154,24 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114240503302368330
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1180206265571216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab871c6b24a145c49bf53fcc16ec85e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pullRadius: 5
+  pullForce: 500
+  minRadius: 1
+  distanceForceMultiplier: 0.5
+  LayersToPull:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &114849229951689352
 MonoBehaviour:
   m_ObjectHideFlags: 1

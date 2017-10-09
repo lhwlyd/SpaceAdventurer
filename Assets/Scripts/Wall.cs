@@ -8,11 +8,6 @@ public class Wall : MonoBehaviour {
 
     private int wallHp = 3;
 
-    private void Awake()
-    {
-        
-    }
-
     public void TakeDamage(){
         wallHp -= playerDamage;
         if(wallHp <= 0){

@@ -18,8 +18,9 @@ public class Player : MovingObjects {
     //UI control
     public Text foodText;
 
-
     public float speed;
+
+    public GameObject rocketFire;
 
 	// Use this for initialization
 	protected override void Start () {
@@ -40,9 +41,10 @@ public class Player : MovingObjects {
 		GameManager.instance.playerHealth = hp;
 	}
 
-	// Update is called once per frame
-	void FixedUpdate () {
-		/*
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        /*
 		if (!GameManager.instance.playersTurn) {
 			return;
 		}
@@ -61,21 +63,22 @@ public class Player : MovingObjects {
 		}
 		*/
 
-		//Store the current horizontal input in the float moveHorizontal.
-		float moveHorizontal = Input.GetAxis("Horizontal");
+        //Store the current horizontal input in the float moveHorizontal.
+        float moveHorizontal = Input.GetAxis("Horizontal");
 
-		//Store the current vertical input in the float moveVertical.
-		float moveVertical = Input.GetAxis("Vertical");
+        //Store the current vertical input in the float moveVertical.
+        float moveVertical = Input.GetAxis("Vertical");
 
 
-        if (moveHorizontal - Mathf.Abs(moveVertical) < Mathf.Epsilon){
+        if (moveHorizontal - Mathf.Abs(moveVertical) < Mathf.Epsilon)
+        {
             moveHorizontal *= 0.71f;
             moveVertical *= 0.71f;
         }
 
 
-		//Use the two store floats to create a new Vector2 variable movement.
-		Vector2 velocity = speed * new Vector2(moveHorizontal, moveVertical);
+        //Use the two store floats to create a new Vector2 variable movement.
+        Vector2 velocity = speed * new Vector2(moveHorizontal, moveVertical);
 
         /*
 		//Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
@@ -83,9 +86,24 @@ public class Player : MovingObjects {
         */
 
 
-        rb2d.AddForce(velocity);
 
-	}
+        // Check for Rocket input
+        if( Input.GetKeyDown("space") ){
+            rb2d.AddForce( 50 * velocity );
+            FireRocket();
+        } else {
+			rb2d.AddForce(velocity);
+		}
+
+    }
+
+
+    /**
+     * Create a rocket fire at opposite to the moving direction of the player.
+     */
+    private void FireRocket(){
+        
+    }
 
 	protected override void OnCantMove<T> (T component){
         Wall hitWall = component as Wall;
@@ -99,6 +117,7 @@ public class Player : MovingObjects {
 	}
 
 
+    // Use this method to hurt the player
 	public void LoseHp( int loss ){
 		hp -= loss;
 
@@ -107,30 +126,53 @@ public class Player : MovingObjects {
 		CheckIfGameOver ();
 	}
 
-	private void OnTriggerEnter2D (Collider2D other){
-		if(other.tag == "Exit"){
-			Invoke ("Restart", restartLevelDelay);
-
-            IEnumerator exitCoroutine = MoveToExit(other.gameObject.transform);
+    /**
+     * Currently checking : exit / food(torch)
+     */
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Exit")
+        {
+            Invoke("Restart", restartLevelDelay);
 
 			enabled = false;
 
-		} else if ( other.tag == "Torch"){
-			hp += healthPerFood;
+			MoveToExit(other.gameObject.transform);
 
-			foodText.text = "+" + healthPerFood + " Torch Light : " + hp;
 
-			other.gameObject.SetActive (false);
-		}
+        }
+        else if (other.tag == "Torch")
+        {
+            hp += healthPerFood;
 
-			
-	}
+            foodText.text = "+" + healthPerFood + " Torch Light : " + hp;
 
-    // The player is sucked into the wormhole!!!
-    IEnumerator MoveToExit(Transform exitTransform){
+            other.gameObject.SetActive(false);
+        }
 
-        yield;
+
     }
+
+    void MoveToExit(Transform exitTransform ){
+        // MoveOverSeconds(this.gameObject, exitTransform.position, restartLevelDelay);
+        this.rb2d.velocity = Vector2.zero;
+    }
+
+    /** Helper method to move an object over some seconds.
+    * might be useful to immitate gravitational work. Haven't found out how should it work yet. Need to check back later
+    */
+	public IEnumerator MoveOverSeconds(GameObject objectToMove, Vector3 end, float seconds)
+	{
+		float elapsedTime = 0;
+		Vector3 startingPos = objectToMove.transform.position;
+		while (elapsedTime < seconds)
+		{
+			objectToMove.transform.position = Vector3.Lerp(startingPos, end, (elapsedTime / seconds));
+			elapsedTime += Time.deltaTime;
+			yield return new WaitForEndOfFrame();
+		}
+		objectToMove.transform.position = end;
+	}
 
     protected override void AttemptMove<T>(float xDir, float yDir){
 		hp--;
@@ -151,6 +193,9 @@ public class Player : MovingObjects {
 		GameManager.instance.playersTurn = false;
 	}
 
+    /**
+     * Always call this every time player's attacked / loss hp
+     */
 	private void CheckIfGameOver(){
 		if( hp <= 0){
 			GameManager.instance.GameOver ();
