@@ -12,6 +12,7 @@ TagManager:
   - Torch
   - MiniMap
   - PlayerPositionController
+  - RocketFire
   layers:
   - Default
   - TransparentFX

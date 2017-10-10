@@ -70,6 +70,12 @@ public class Enemy : MovingObjects {
 		if ( other.tag == "Torch"){
 			other.gameObject.SetActive (false);
 		}
+
+		if (other.tag == "Exit" || other.tag == "RocketFire")
+		{
+			this.gameObject.SetActive(false);
+		}
+
 	}
 
     void FixedUpdate()
@@ -101,4 +107,5 @@ public class Enemy : MovingObjects {
             this.gameObject.SetActive(false);
         }
     }
+
 }

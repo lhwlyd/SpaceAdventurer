@@ -89,8 +89,8 @@ public class Player : MovingObjects {
 
         // Check for Rocket input
         if( Input.GetKeyDown("space") ){
-            rb2d.AddForce( 50 * velocity );
-            FireRocket();
+			FireRocket(velocity);
+			rb2d.AddForce( 30 * velocity );
         } else {
 			rb2d.AddForce(velocity);
 		}
@@ -101,8 +101,11 @@ public class Player : MovingObjects {
     /**
      * Create a rocket fire at opposite to the moving direction of the player.
      */
-    private void FireRocket(){
-        
+    private void FireRocket( Vector2 direction ){
+
+        GameObject fire = Instantiate(rocketFire, new Vector3(this.transform.position.x, this.transform.position.y, 0f), this.transform.rotation) as GameObject;
+        fire.transform.SetParent(this.transform);
+        Destroy(fire, 1f);
     }
 
 	protected override void OnCantMove<T> (T component){
