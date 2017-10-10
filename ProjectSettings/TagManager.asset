@@ -56,6 +56,12 @@ TagManager:
   - name: Items
     uniqueID: 2249156977
     locked: 0
-  - name: Units
+  - name: Ammos
     uniqueID: 1306227767
+    locked: 0
+  - name: Units
+    uniqueID: 1750388831
+    locked: 0
+  - name: OuterWall
+    uniqueID: 2313298645
     locked: 0

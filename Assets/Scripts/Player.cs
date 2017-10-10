@@ -63,12 +63,21 @@ public class Player : MovingObjects {
 		}
 		*/
 
+
+        /**
+         *  Deprecate this moving method (inputs add force directly) since it doesn't feel physical
         //Store the current horizontal input in the float moveHorizontal.
         float moveHorizontal = Input.GetAxis("Horizontal");
 
         //Store the current vertical input in the float moveVertical.
         float moveVertical = Input.GetAxis("Vertical");
 
+        if ( moveHorizontal < 0f ){
+            this.GetComponent<SpriteRenderer>().sprite = leftSpaceMan;
+        } else {
+			if (moveHorizontal > 0f)
+			this.GetComponent<SpriteRenderer>().sprite = rightSpaceMan;
+		}
 
         if (moveHorizontal - Mathf.Abs(moveVertical) < Mathf.Epsilon)
         {
@@ -77,33 +86,82 @@ public class Player : MovingObjects {
         }
 
 
+
         //Use the two store floats to create a new Vector2 variable movement.
         Vector2 velocity = speed * new Vector2(moveHorizontal, moveVertical);
+
+        */
 
         /*
 		//Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
         rb2d.MovePosition(rb2d.position + velocity * Time.deltaTime);
-        */
 
+
+
+
+
+        float angle = Mathf.Atan2(velocity.x, velocity.y) * Mathf.Rad2Deg;
+        // Below is a lazy implementation. Not physical
+        // this.transform.rotation = Quaternion.Euler(new Vector3(0, 0, -angle));
+
+      
 
 
         // Check for Rocket input
-        if( Input.GetKeyDown("space") ){
+        if( Input.GetKeyDown("space") && velocity.magnitude > 0){
 			FireRocket(velocity);
 			rb2d.AddForce( 30 * velocity );
         } else {
 			rb2d.AddForce(velocity);
 		}
 
-    }
+        */
 
 
+        float moveHorizontal = Input.GetAxis("Horizontal");
+
+        //Store the current vertical input in the float moveVertical.
+        float moveVertical = Input.GetAxis("Vertical");
+
+
+		if (moveHorizontal < 0f)
+		{
+            this.animator.SetBool("FacingRight", false);
+		}
+		
+        if (moveHorizontal > 0f){
+            this.animator.SetBool("FacingRight", true);
+	    }
+		
+
+        // Rotate
+        this.rb2d.AddTorque( moveHorizontal * -1f, ForceMode2D.Force);
+
+        // Physical implementation: using torque instead of adjusting angle directly.
+        if (moveVertical > 0f)
+        {
+            this.animator.SetBool("Moving", true);
+            this.rb2d.AddForce(this.transform.up * speed);
+
+        } else {
+            
+            this.animator.SetBool("Moving", false);
+        }
+
+		if (Input.GetKeyDown("space") )
+		{
+			FireRocket();
+		}
+
+	}
     /**
      * Create a rocket fire at opposite to the moving direction of the player.
      */
-    private void FireRocket( Vector2 direction ){
+    private void FireRocket(){
 
         GameObject fire = Instantiate(rocketFire, new Vector3(this.transform.position.x, this.transform.position.y, 0f), this.transform.rotation) as GameObject;
+		rb2d.AddForce(100 * speed * this.transform.up);
+		fire.transform.Rotate(0,0,180);
         fire.transform.SetParent(this.transform);
         Destroy(fire, 1f);
     }
