@@ -677,7 +677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9558824, g: 0.45486814, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.99264705, b: 0.66404647, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -697,7 +697,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Torch Light : 100'
+  m_Text: 'Oxygen Left : 100 %'
 --- !u!222 &1056134184
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class Player : MovingObjects {
 
 	public int attackDamage = 1;
-	public int healthPerFood = 25;
-	public float restartLevelDelay = 2f;
+    [HideInInspector] public int healthPerFood = 10;
+	public float restartLevelDelay = 1.75f;
 
 	private Animator animator;
 	[HideInInspector]public int hp;
@@ -22,6 +22,8 @@ public class Player : MovingObjects {
 
     public GameObject rocketFire;
 
+    private float inhaleTime;
+
 	// Use this for initialization
 	protected override void Start () {
 		animator = GetComponent<Animator> ();
@@ -30,7 +32,7 @@ public class Player : MovingObjects {
 
 		foodText = GameObject.Find ("FoodText").GetComponent<Text>();
 
-		foodText.text = "Torch Light : " + hp;
+		foodText.text = "Oxygen Left " + hp + " %";
 
         rb2d = this.GetComponent<Rigidbody2D>();
 
@@ -117,6 +119,14 @@ public class Player : MovingObjects {
 
         */
 
+        inhaleTime += Time.fixedDeltaTime;
+        if( inhaleTime >= 3f ){
+            inhaleTime = 0;
+            hp -= 1;
+			foodText.text = " Oxygen Left : " + hp + " %";
+
+		}
+
 
         float moveHorizontal = Input.GetAxis("Horizontal");
 
@@ -127,10 +137,18 @@ public class Player : MovingObjects {
 		if (moveHorizontal < 0f)
 		{
             this.animator.SetBool("FacingRight", false);
+
+            // Also change the backpack if it was using left backpack
+            transform.Find("LeftBackpackTransform").GetComponent<TrailRenderer>().time = 0.5f;
+			transform.Find("RightBackpackTransform").GetComponent<TrailRenderer>().time = 0;
+
 		}
 		
         if (moveHorizontal > 0f){
             this.animator.SetBool("FacingRight", true);
+			transform.Find("RightBackpackTransform").GetComponent<TrailRenderer>().time = 0.5f;
+			transform.Find("LeftBackpackTransform").GetComponent<TrailRenderer>().time = 0;
+
 	    }
 		
 
@@ -158,6 +176,7 @@ public class Player : MovingObjects {
      * Create a rocket fire at opposite to the moving direction of the player.
      */
     private void FireRocket(){
+        this.LoseHp(1);
 
         GameObject fire = Instantiate(rocketFire, new Vector3(this.transform.position.x, this.transform.position.y, 0f), this.transform.rotation) as GameObject;
 		rb2d.AddForce(100 * speed * this.transform.up);
@@ -182,7 +201,7 @@ public class Player : MovingObjects {
 	public void LoseHp( int loss ){
 		hp -= loss;
 
-		foodText.text = "-" + loss  + " Torch Light : " + hp;
+		foodText.text = "-" + loss  + " Oxygen Left : " + hp + " %";
 
 		CheckIfGameOver ();
 	}
@@ -204,11 +223,27 @@ public class Player : MovingObjects {
         }
         else if (other.tag == "Torch")
         {
-            hp += healthPerFood;
+            int healthAdded = healthPerFood;
+            if (hp >= 90)
+            {
+                hp += (int)(healthPerFood / 4);
+                healthAdded = (int)(healthPerFood / 4);
+            }
+            else
+            {
+                if (hp >= 50)
+                {
+                    healthPerFood += (int)(healthPerFood / 2);
+					healthAdded = (int)(healthPerFood / 2);
 
-            foodText.text = "+" + healthPerFood + " Torch Light : " + hp;
+				} else {
+					hp += healthPerFood;
+				}
+            } 
 
-            other.gameObject.SetActive(false);
+            foodText.text = "+" + healthAdded + " Oxygen Left : " + hp + " %";
+
+			other.gameObject.SetActive(false);
         }
 
 
@@ -238,7 +273,7 @@ public class Player : MovingObjects {
     protected override void AttemptMove<T>(float xDir, float yDir){
 		hp--;
 
-		foodText.text = "Torch Light : " + hp;
+        foodText.text = "Oxygen Left : " + hp + " %";
 
 		base.AttemptMove<T> (xDir, yDir);
 

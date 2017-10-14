@@ -114,6 +114,7 @@
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\ExitSpinner.cs" />
     <Compile Include="Assets\Scripts\Fading.cs" />
+    <Compile Include="Assets\Scripts\Food.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GravityPoint.cs" />
     <Compile Include="Assets\Scripts\LightController.cs" />

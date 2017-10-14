@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour {
 
 		levelImage = GameObject.Find ("LevelImage");
 		levelText = GameObject.Find ("LevelText").GetComponent<Text>();
-		levelText.text = "Night " + level;	
+        levelText.text = "Galaxy #" + (char)(Random.Range(33, 126)) + (char)(Random.Range(33, 126)) + (char)(Random.Range(48, 126)) + (char)(Random.Range(33, 126));	
 		levelImage.SetActive(true);
 		miniMap = GameObject.Find ("MiniMap");
 		//miniMap.SetActive (false);
@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void GameOver(){
-		levelText.text = "you died, sucker";
+		levelText.text = "Better luck next time, astronaut!";
 		levelImage.SetActive (true);
 		enabled = false;
 	}

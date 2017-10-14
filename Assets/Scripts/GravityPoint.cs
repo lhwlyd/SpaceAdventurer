@@ -17,6 +17,10 @@ public class GravityPoint : MonoBehaviour {
 
         foreach( Collider2D obj in colliders){
             Rigidbody2D rb2d = obj.GetComponent<Rigidbody2D>();
+            if(obj.tag == "Torch"){
+                obj.gameObject.SetActive(false);
+                continue;
+            }
 
             if( rb2d == null ){
                 continue;

@@ -53,7 +53,8 @@ GameObject:
   - component: {fileID: 4300880325483084}
   - component: {fileID: 212438267335483244}
   - component: {fileID: 61809989618861982}
-  m_Layer: 0
+  - component: {fileID: 114349421902400364}
+  m_Layer: 8
   m_Name: Food1
   m_TagString: Torch
   m_Icon: {fileID: 0}
@@ -162,6 +163,17 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114349421902400364
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1741505592017278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69a8adeda7534f17ae6c97e97d9dff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212438267335483244
 SpriteRenderer:
   m_ObjectHideFlags: 1
