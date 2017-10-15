@@ -9,7 +9,7 @@ public class Radar : MonoBehaviour {
     public GameObject radarPrefab;
     List<GameObject> borderObjects;
 
-    public float switchDistance = 10f;
+    public float switchDistance = 8.5f;
 
     public Transform helpTransform;
 

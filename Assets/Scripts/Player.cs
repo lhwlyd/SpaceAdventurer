@@ -22,6 +22,8 @@ public class Player : MovingObjects {
 
     public GameObject rocketFire;
 
+    public AudioSource audioSource;
+
     private float inhaleTime;
 
 	// Use this for initialization
@@ -124,6 +126,8 @@ public class Player : MovingObjects {
             inhaleTime = 0;
             hp -= 1;
 			foodText.text = " Oxygen Left : " + hp + " %";
+
+            CheckIfGameOver();
 
 		}
 
@@ -238,6 +242,7 @@ public class Player : MovingObjects {
 
 				} else {
 					hp += healthPerFood;
+                    healthAdded = healthPerFood;
 				}
             } 
 
@@ -297,4 +302,13 @@ public class Player : MovingObjects {
 			GameManager.instance.GameOver ();
 		}
 	}
+
+    private void Fade(float start, float end, float length, GameObject currentObj )
+    {
+        if (Mathf.ping){
+            
+        }
+
+    }
+
 }
