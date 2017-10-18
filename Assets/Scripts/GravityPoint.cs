@@ -20,7 +20,14 @@ public class GravityPoint : MonoBehaviour {
             if(obj.tag == "Torch"){
                 obj.gameObject.SetActive(false);
                 continue;
+            } else {
+                // Exit should kill all walls in its radius.
+                if( this.gameObject.tag == "Exit" && obj.tag == "Obstacle"){
+                    obj.gameObject.SetActive(false);
+                }
             }
+
+
 
             if( rb2d == null ){
                 continue;

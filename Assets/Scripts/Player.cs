@@ -26,8 +26,12 @@ public class Player : MovingObjects {
 
     private float inhaleTime;
 
+    public float timeToBreathe = 1.5f;
+
+    public bool stopped = false;
+
 	// Use this for initialization
-	protected override void Start () {
+	protected override void Start () {  
 		animator = GetComponent<Animator> ();
 
 		hp = GameManager.instance.playerHealth;
@@ -48,6 +52,9 @@ public class Player : MovingObjects {
     // Update is called once per frame
     void FixedUpdate()
     {
+        if ( stopped || GameManager.instance.doingSetup) {
+            return;
+        }
         /*
 		if (!GameManager.instance.playersTurn) {
 			return;
@@ -122,7 +129,8 @@ public class Player : MovingObjects {
         */
 
         inhaleTime += Time.fixedDeltaTime;
-        if( inhaleTime >= 3f ){
+        GameManager.instance.survivedTime += Time.fixedDeltaTime;
+        if( inhaleTime >= timeToBreathe ){
             inhaleTime = 0;
             hp -= 1;
 			foodText.text = " Oxygen Left : " + hp + " %";
@@ -227,19 +235,19 @@ public class Player : MovingObjects {
         }
         else if (other.tag == "Torch")
         {
+            // Hp per food goes up as hp goes down.
             int healthAdded = healthPerFood;
-            if (hp >= 90)
+            if (hp >= 60)
             {
                 hp += (int)(healthPerFood / 4);
                 healthAdded = (int)(healthPerFood / 4);
             }
             else
             {
-                if (hp >= 50)
+                if (hp >= 30)
                 {
-                    healthPerFood += (int)(healthPerFood / 2);
+                    hp += (int)(healthPerFood / 2);
 					healthAdded = (int)(healthPerFood / 2);
-
 				} else {
 					hp += healthPerFood;
                     healthAdded = healthPerFood;
@@ -257,6 +265,7 @@ public class Player : MovingObjects {
     void MoveToExit(Transform exitTransform ){
         // MoveOverSeconds(this.gameObject, exitTransform.position, restartLevelDelay);
         this.rb2d.velocity = Vector2.zero;
+        this.stopped = true;
     }
 
     /** Helper method to move an object over some seconds.
@@ -291,7 +300,6 @@ public class Player : MovingObjects {
 
 		CheckIfGameOver ();
 
-		GameManager.instance.playersTurn = false;
 	}
 
     /**
@@ -299,16 +307,13 @@ public class Player : MovingObjects {
      */
 	private void CheckIfGameOver(){
 		if( hp <= 0){
-			GameManager.instance.GameOver ();
+            this.enabled = false;
+            //stopped = true;
+            this.gameObject.SetActive(false);
+            GameManager.instance.GameOver ();
 		}
 	}
 
-    private void Fade(float start, float end, float length, GameObject currentObj )
-    {
-        if (Mathf.ping){
-            
-        }
 
-    }
 
 }

@@ -51,12 +51,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4587665115500462}
-  - component: {fileID: 61801218090836900}
   - component: {fileID: 50807141378458890}
   - component: {fileID: 212598713090582442}
   - component: {fileID: 114243817972477202}
-  - component: {fileID: 58531520052197558}
   - component: {fileID: 95592782820900902}
+  - component: {fileID: 58341054498776630}
   m_Layer: 8
   m_Name: Tyler1
   m_TagString: Player
@@ -87,7 +86,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1027481179561684}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.46, y: -0.24, z: 0}
+  m_LocalPosition: {x: 0.46, y: -0.786, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4587665115500462}
@@ -100,7 +99,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1974283689484416}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.46, y: -0.24, z: 0}
+  m_LocalPosition: {x: -0.432, y: -0.786, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4587665115500462}
@@ -155,7 +154,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!58 &58531520052197558
+--- !u!58 &58341054498776630
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -169,32 +168,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.45
---- !u!61 &61801218090836900
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1768708494300930}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.53125, y: 2.3125}
-    newSize: {x: 12.8, y: 7.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.9}
-  m_EdgeRadius: 0
+  m_Radius: 0.7
 --- !u!95 &95592782820900902
 Animator:
   serializedVersion: 3
@@ -418,6 +392,8 @@ MonoBehaviour:
   speed: 1
   rocketFire: {fileID: 1611369444751620, guid: b5b6ac394c6ae4c32a520925a7aa600b, type: 2}
   audioSource: {fileID: 0}
+  timeToBreathe: 1.5
+  stopped: 0
 --- !u!212 &212598713090582442
 SpriteRenderer:
   m_ObjectHideFlags: 1

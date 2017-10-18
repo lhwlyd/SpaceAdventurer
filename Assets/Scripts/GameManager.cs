@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -14,22 +15,25 @@ public class GameManager : MonoBehaviour {
 
 	public float turnDelay = 0.1f;
 
-	public int playerHealth = 100;
+    public int playerHealth = 100;
 
 	[HideInInspector]public int mapSize = 30;
 
 	[HideInInspector]public bool playersTurn = false;
 
 	private List<Enemy> enemies;
-	private bool enemiesMoving;
 
 	//UI control
 	public float levelStartingDelay = 2f;
 	private Text levelText;
 	private GameObject levelImage;
-	private bool doingSetup;
+	public bool doingSetup;
 
 	public GameObject miniMap;
+
+    // Records
+    private float bestRecord;
+    public float survivedTime;
 
 	// Use this for initialization
 	void Awake () {
@@ -42,6 +46,7 @@ public class GameManager : MonoBehaviour {
 
 		DontDestroyOnLoad (gameObject);
 
+
 		enemies = new List<Enemy> ();
 		boardScript = GetComponent<BoardManager> ();
 		InitGame ();
@@ -49,6 +54,9 @@ public class GameManager : MonoBehaviour {
 
 	void InitGame(){
 		doingSetup = true;
+
+        level = 1;
+		mapSize = level * 5 + 30;
 
 		levelImage = GameObject.Find ("LevelImage");
 		levelText = GameObject.Find ("LevelText").GetComponent<Text>();
@@ -60,7 +68,7 @@ public class GameManager : MonoBehaviour {
 
         enemies.Clear();
 
-        mapSize = level * 5 + 30;
+		survivedTime = 0;
 
 		boardScript.SetUpScene (level, mapSize);
 	}
@@ -71,26 +79,34 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void GameOver(){
-		levelText.text = "Better luck next time, astronaut!";
+        if( survivedTime >= bestRecord ){
+            bestRecord = survivedTime;
+        }
+
+        doingSetup = true;
+        levelText.text = "Better luck next time, astronaut!\n\nYou have survived: " + survivedTime +" seconds\n" +
+            "Your best Recod is : " + bestRecord + " seconds, keep it up!";
 		levelImage.SetActive (true);
-		enabled = false;
+		
+
+        StartCoroutine(TryAgain());
+
 	}
 
+    private IEnumerator TryAgain(){
+        yield return new WaitForSeconds(1.5f);
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.R));
 
-	void Update(){
-
-		//miniMap.enabled = !miniMap.GetComponent<Renderer>().enabled;
-
-		if(playersTurn || enemiesMoving || doingSetup){
-			return;
-		}
-		StartCoroutine (MoveEnemies ());
-	}
+        level = 0;
+        SceneManager.LoadScene(0);
+    }
 
 	public void AddEnemyToList(Enemy enemy){
 		enemies.Add (enemy);
 	}
 
+
+    /*  Deprecated enemy moving method
 	IEnumerator MoveEnemies(){
 		enemiesMoving = true;
 		yield return new WaitForSeconds(turnDelay);
@@ -107,6 +123,7 @@ public class GameManager : MonoBehaviour {
 		playersTurn = true;
 		enemiesMoving = false;
 	}
+	*/
 
 
 	void OnLevelWasLoaded(int index){

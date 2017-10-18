@@ -52,7 +52,17 @@ public class BoardManager : MonoBehaviour {
 
 	private int[,] map;
 
+    // Vars for putting exit away from player's initial position
+    private GameObject currExit;
 
+    private int exitRelocationTimes = 0;
+    private int maxExitRelocationTimes = 15;
+    private float tooCloseThreshold = 10f;
+
+
+    // Leave more than 25% ground as walkable
+    private float walkablePercent = 0.25f;
+    private int walkableCount = 0;
 
 	/*
 	 * Fill the gridPosition list with all the valid grid positions
@@ -78,11 +88,13 @@ public class BoardManager : MonoBehaviour {
 	 * Set up the board with random floor tiles and surround it by water
 	 */
 	void BoardSetup(int mapSize){
+
 		columns = mapSize;
 		rows = mapSize;
 
         foodCount = new Count ((int)(mapSize/2), (int)(mapSize/2) + 5);
 
+        // Use holders to hold all these stuff, make the workspace less messy.
         if (boardHolder == null)
         {
             boardHolder = new GameObject("Board").transform;
@@ -103,7 +115,21 @@ public class BoardManager : MonoBehaviour {
 			foodHolder = new GameObject("Foods").transform;
 		}
 
-		map = mapGenerator.GenerateMap (mapSize, out centerX, out centerY);
+
+
+        do
+        {
+            walkableCount = 0;
+            map = mapGenerator.GenerateMap(mapSize, out centerX, out centerY);
+            foreach (int i in map)
+            {
+                if (i == 0)
+                {
+                    walkableCount += 1;
+                }
+            }
+            Debug.Log("generate map once");
+        } while ((float)(walkableCount / mapSize * mapSize) < walkablePercent);
 
 
 		//Go 1 extra grid at the brim bc we want to surround the playground with water.
@@ -148,12 +174,10 @@ public class BoardManager : MonoBehaviour {
 
             GameObject tileGenerated = Instantiate (tileChosen, new Vector3(randomPosition.tileX,randomPosition.tileY, 0f), Quaternion.identity) as GameObject;
 
-            // add the exit to radar's detectable tile set.
+            // If it's the exit
             if( tileArray[0].Equals(exit[0]) ){
-				ppcRadar = GameObject.Find("PlayerPositionController").GetComponent<Radar>();
-
-                ppcRadar.AddToTrackedObjects(tileGenerated);
-
+                // Also update the exit location
+                currExit = tileGenerated;
             }
 
             if (tileArray == foodTiles){
@@ -166,26 +190,59 @@ public class BoardManager : MonoBehaviour {
 
 	}
 
-	public void SetUpScene(int level, int mapSize){
-    	
-		mapGenerator = GetComponentInParent<MapGenerator> ();
-		
-		BoardSetup (mapSize);
+    public void SetUpScene(int level, int mapSize)
+    {
 
-		InitializeList ();
+        mapGenerator = GetComponentInParent<MapGenerator>();
 
-		LayoutObjectAtRandom (wallTiles, wallCount.minimum, wallCount.maximum);
-		LayoutObjectAtRandom (foodTiles, foodCount.minimum, foodCount.maximum);
+        BoardSetup(mapSize);
+
+        InitializeList();
+
+        LayoutObjectAtRandom(wallTiles, wallCount.minimum, wallCount.maximum);
+        LayoutObjectAtRandom(foodTiles, foodCount.minimum, foodCount.maximum);
 
         int enemyCount = 2 * level;
 
-        LayoutObjectAtRandom (enemyTiles, enemyCount, (int)(1.5f *enemyCount));
+        LayoutObjectAtRandom(enemyTiles, enemyCount, (int)(1.5f * enemyCount));
+
+
+        /*
+        // Make sure there's only one player
+        GameObject tempPlayer = GameObject.FindWithTag("Player");
+        if ( tempPlayer != null){
+            Destroy(tempPlayer);
+        }
+        */
 
         Instantiate(player, new Vector3(centerX, centerY, 0f), Quaternion.identity);
+        Debug.Log("x is:" + centerX + "  y is:" + centerY);
 
-		LayoutObjectAtRandom(exit, 1, 1);
+        LayoutObjectAtRandom(exit, 1, 1);
+
+        // Make sure the exit is far away from the player so that player won't skip some level unwantedly.
+        while (CheckDistanceBetween(currExit.transform, player.transform) < tooCloseThreshold 
+               && exitRelocationTimes < maxExitRelocationTimes){
+            exitRelocationTimes++;
+            Destroy(currExit);
+			LayoutObjectAtRandom(exit, 1, 1);
+		}
+
+        if (CheckDistanceBetween(currExit.transform, player.transform) < tooCloseThreshold){
+            this.SetUpScene(level, mapSize);
+        }
+
+		// add the exit to radar's detectable tile set.
+		ppcRadar = GameObject.Find("PlayerPositionController").GetComponent<Radar>();
+
+        ppcRadar.AddToTrackedObjects(currExit);
 
 	}
+
+    private float CheckDistanceBetween( Transform t1, Transform t2){
+        return Mathf.Log(Mathf.Pow((t1.position.x - t2.transform.position.x), 2) +
+                         Mathf.Pow((t1.position.y - t2.transform.position.y), 2), 2);
+    }
 
 	//Utility
 	struct Coord{

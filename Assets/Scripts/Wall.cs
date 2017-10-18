@@ -14,7 +14,7 @@ public class Wall : MonoBehaviour
         wallHp -= playerDamage;
         if (wallHp <= 0)
         {
-            gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
     }
 
@@ -23,7 +23,7 @@ public class Wall : MonoBehaviour
 
 		if (other.tag == "Exit" || other.tag == "RocketFire")
 		{
-			this.gameObject.SetActive(false);
+            Destroy(this.gameObject);
 		}
 
 	}

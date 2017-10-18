@@ -67,19 +67,19 @@ public class Enemy : MovingObjects {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if ( other.tag == "Torch"){
-			other.gameObject.SetActive (false);
-		}
 
 		if (other.tag == "Exit" || other.tag == "RocketFire")
 		{
-			this.gameObject.SetActive(false);
+            Destroy(this.gameObject);
 		}
 
 	}
 
     void FixedUpdate()
     {
+        if(GameManager.instance.doingSetup){
+            return;
+        }
         float yDir = (target.position.y - this.transform.position.y);
         float xDir = (target.position.x - this.transform.position.x);
         float vSquare = Mathf.Pow(xDir, 2) + Mathf.Pow(yDir, 2);
@@ -104,7 +104,7 @@ public class Enemy : MovingObjects {
         if(collision.gameObject.tag == "Player"){
             collision.gameObject.SendMessage("LoseHp", playerDamage);
 
-            this.gameObject.SetActive(false);
+            Destroy(this.gameObject);
         }
     }
 

@@ -22,6 +22,7 @@ public class MapGenerator : MonoBehaviour{
 
 	static int[,] map ;
 
+
 	public int[,] GenerateMap(int mapSize, out int centerX, out int centerY){
 		width = mapSize;
 		height = mapSize;
@@ -213,6 +214,7 @@ public class MapGenerator : MonoBehaviour{
 
 		//Find the center tile's X value
 		foreach(Coord tile in mainRoom.tiles){
+
 			if( tile.tileX > eastX || eastX == -1){
 				eastX = tile.tileX;
 			}
