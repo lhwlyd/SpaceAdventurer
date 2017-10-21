@@ -5,6 +5,14 @@ using Random = UnityEngine.Random;
 using System;
 
 
+/** 
+ * I'll give total credit to Mr. Sebastian Lague. I'll suggest checking out his
+ * videos to learn how this works. I made some tweaks but most of this still follows
+ * his ideas. 
+ * 
+ * The first video link:
+ * https://unity3d.com/learn/tutorials/projects/procedural-cave-generation-tutorial/cellular-automata?playlist=17153
+ */
 public class MapGenerator : MonoBehaviour{
 
 	private int width;	
@@ -205,7 +213,7 @@ public class MapGenerator : MonoBehaviour{
 	/*
 	 * Find out the center tile of the main room
 	 */
-	Coord CalculateCenterOfMainRoom(Room mainRoom){
+    Coord CalculateCenterOfMainRoom(Room mainRoom){
 		int eastX = -1;
 		int westX = -1;
 

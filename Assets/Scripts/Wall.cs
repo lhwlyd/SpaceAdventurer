@@ -18,14 +18,4 @@ public class Wall : MonoBehaviour
         }
     }
 
-	void OnTriggerEnter2D(Collider2D other)
-	{
-
-		if (other.tag == "Exit" || other.tag == "RocketFire")
-		{
-            Destroy(this.gameObject);
-		}
-
-	}
-
 }

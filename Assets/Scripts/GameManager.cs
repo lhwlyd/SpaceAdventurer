@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/**
+ * This is the manager of the entire game, it initializes the board using the 
+ * board manager, and handles re-play and game informations.
+ */
 public class GameManager : MonoBehaviour {
 
 	//No more than one game manager

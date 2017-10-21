@@ -1,13 +1,11 @@
 ﻿<Properties StartupConfiguration="{3997FC83-502D-5DA1-9038-ACA6C69D5A3E}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BoardManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Destroying.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="36" Column="21" />
       <File FileName="Assets/Scripts/Player.cs" Line="32" Column="5" />
-      <File FileName="Assets/Scripts/BoardManager.cs" Line="101" Column="10" />
-      <File FileName="Assets/Scripts/MapGenerator.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/MovingObjects.cs" Line="49" Column="6" />
-      <File FileName="Assets/Scripts/LightController.cs" Line="25" Column="1" />
+      <File FileName="Assets/Scripts/BoardManager.cs" Line="192" Column="78" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="20" Column="17" />
+      <File FileName="Assets/Scripts/MovingObjects.cs" Line="19" Column="9" />
       <File FileName="Assets/Scripts/MainCameraManager.cs" Line="23" Column="9" />
       <File FileName="Assets/Scripts/Fading.cs" Line="35" Column="5" />
       <File FileName="Assets/Scripts/Radar.cs" Line="1" Column="1" />
@@ -15,6 +13,9 @@
       <File FileName="Assets/Scripts/Wall.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ExitSpinner.cs" Line="12" Column="5" />
       <File FileName="Assets/Scripts/GravityPoint.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MapGenerator.cs" Line="217" Column="18" />
+      <File FileName="Assets/Scripts/DumbEnemy.cs" Line="10" Column="6" />
+      <File FileName="Assets/Scripts/Destroying.cs" Line="6" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

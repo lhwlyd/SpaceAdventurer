@@ -59,7 +59,9 @@ MonoBehaviour:
   mapSize: 0
   playersTurn: 1
   levelStartingDelay: 2
+  doingSetup: 0
   miniMap: {fileID: 1965617957775970, guid: 32c820e005f7d4fb4b8c6aee3c04b10e, type: 2}
+  survivedTime: 0
 --- !u!114 &114146780445387444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -119,6 +121,7 @@ MonoBehaviour:
   roadTiles:
   - {fileID: 1374484985355394, guid: 06b3f881e8c954254bbbd818632d3c32, type: 2}
   - {fileID: 1766440076977108, guid: e15e0f91dba834842b97be39b3b8d3d5, type: 2}
-  waterTile: {fileID: 1788154617825678, guid: e09add6a9c5ef45b8bf14a7e8844c45c, type: 2}
+  outerWallTile: {fileID: 1788154617825678, guid: e09add6a9c5ef45b8bf14a7e8844c45c,
+    type: 2}
   centerX: 0
   centerY: 0

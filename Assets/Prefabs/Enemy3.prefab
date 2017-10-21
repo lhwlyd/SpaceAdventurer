@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 50543946843659288}
   - component: {fileID: 58898872972477462}
   - component: {fileID: 212105918369741846}
-  - component: {fileID: 114073189316948286}
+  - component: {fileID: 114111443690557194}
   m_Layer: 8
   m_Name: Enemy3
   m_TagString: Enemy
@@ -78,7 +78,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.45
---- !u!114 &114073189316948286
+--- !u!114 &114111443690557194
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -86,16 +86,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1978216044089814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f4a06b4bb2f041f5883003433120995, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b41651a2f5e34d479ea02bffe2e3d87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTime: 0
-  blockingLayer:
-    serializedVersion: 2
-    m_Bits: 256
   playerDamage: 3
   rb2d: {fileID: 0}
-  speed: 3
+  speed: 4
+  circleCollider2d: {fileID: 0}
+  explosion: {fileID: 1911405549345840, guid: c99c2d3bf4d474d42935fec33acd75a5, type: 2}
 --- !u!212 &212105918369741846
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -128,7 +126,7 @@ SpriteRenderer:
   m_SortingLayerID: 1750388831
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300272, guid: 85e8e745a5c9a439b904e1b5253e9b4b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 54de4bca2abaa4e71aadeb3609f9047d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

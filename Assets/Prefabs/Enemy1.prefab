@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 50847359180502766}
   - component: {fileID: 58686762613824186}
   - component: {fileID: 212639636845780478}
-  - component: {fileID: 114754688455189988}
+  - component: {fileID: 114950577499217266}
   m_Layer: 8
   m_Name: Enemy1
   m_TagString: Enemy
@@ -78,7 +78,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.45
---- !u!114 &114754688455189988
+--- !u!114 &114950577499217266
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -86,16 +86,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1369392993802238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f4a06b4bb2f041f5883003433120995, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b41651a2f5e34d479ea02bffe2e3d87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTime: 0
-  blockingLayer:
-    serializedVersion: 2
-    m_Bits: 256
   playerDamage: 1
   rb2d: {fileID: 0}
-  speed: 3
+  speed: 2
+  circleCollider2d: {fileID: 0}
+  explosion: {fileID: 1911405549345840, guid: c99c2d3bf4d474d42935fec33acd75a5, type: 2}
 --- !u!212 &212639636845780478
 SpriteRenderer:
   m_ObjectHideFlags: 1

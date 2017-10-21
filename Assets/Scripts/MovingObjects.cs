@@ -54,6 +54,7 @@ public abstract class MovingObjects : MonoBehaviour {
 
 	}
 
+    // Deprecated
     protected virtual void AttemptMove<T> (float xDir, float yDir) where T : Component{
 		//hit also get updated in the move method since there's an out param
 		RaycastHit2D hit;
@@ -72,7 +73,7 @@ public abstract class MovingObjects : MonoBehaviour {
 	}
 
 	/*
-	 * interaction happens
+	 * interaction happens, *** deprecated
 	 */
 	protected abstract void OnCantMove<T> (T component)
 		where T : Component;

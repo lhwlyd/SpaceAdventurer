@@ -4,6 +4,11 @@ using System;
 using Random = UnityEngine.Random;
 using UnityEngine;
 
+/**
+ * This is the board manager. Used to 1. make a map 2. distribute elements to the map
+ * 3. put player and exit on it.
+ * 
+ */
 public class BoardManager : MonoBehaviour {
 
 	public GameManager gameManager;
@@ -35,7 +40,7 @@ public class BoardManager : MonoBehaviour {
     public GameObject[] enemyTiles;
 	public GameObject[] wallTiles;
 	public GameObject[] roadTiles;
-	public GameObject waterTile;
+	public GameObject outerWallTile;
 
 	public int centerX;
 	public int centerY;
@@ -64,10 +69,15 @@ public class BoardManager : MonoBehaviour {
     private float walkablePercent = 0.25f;
     private int walkableCount = 0;
 
+
 	/*
 	 * Fill the gridPosition list with all the valid grid positions
 	 */
 	void InitializeList(){
+
+        /**
+         * We use gridPostions to mark which grid is still available or not
+         */
 
 		gridPositions.Clear ();
 
@@ -75,6 +85,7 @@ public class BoardManager : MonoBehaviour {
 		for( int x=1; x<columns-1;x++){
 			//Leave 1 grid at the brim to make sure no impossible levels.
 			for(int y=1;y<rows-1;y++){
+                // if this grid is not a wall, it means this is available.
 				if(map[x,y] == 0)
 					gridPositions.Add(new Coord(x,y));
 			}
@@ -105,6 +116,7 @@ public class BoardManager : MonoBehaviour {
             boardHolder = new GameObject("Board").transform;
         }
 
+
         if (foodHolder == null)
 		{
 			foodHolder = new GameObject("Foods").transform;
@@ -116,7 +128,8 @@ public class BoardManager : MonoBehaviour {
 		}
 
 
-
+        /** Make sure there's enough place to put all elements we want on the map.
+         */
         do
         {
             walkableCount = 0;
@@ -132,7 +145,9 @@ public class BoardManager : MonoBehaviour {
         } while ((float)(walkableCount / mapSize * mapSize) < walkablePercent);
 
 
-		//Go 1 extra grid at the brim bc we want to surround the playground with water.
+        // Set up the walls and grounds
+
+		// Go 1 extra grid at the brim bc we want to surround the playground with water.
 		for( int x=0; x<columns;x++){
 			//Leave 1 grid at the brim to make sure no impossible levels.
 			for(int y=0;y<rows;y++){
@@ -141,7 +156,7 @@ public class BoardManager : MonoBehaviour {
 				if (map [x, y] == 0) {
 					toInstantiate = floorTiles [Random.Range (0, floorTiles.Length)];
 				} else {
-					toInstantiate = waterTile;
+                    toInstantiate = outerWallTile;
 				}
 
 				GameObject newInstance = Instantiate (toInstantiate, new Vector3(x,y,0F), Quaternion.identity) as GameObject;	
@@ -165,6 +180,10 @@ public class BoardManager : MonoBehaviour {
 		return randomPosition;
 	}
 
+    /**
+     * Put a random obj from the input tile array and put it randomly on an 
+     * available grid.
+     */
 	void LayoutObjectAtRandom( GameObject[] tileArray, int min, int max){
 
 		int objectCount = Random.Range ( min, max+1);
@@ -174,7 +193,7 @@ public class BoardManager : MonoBehaviour {
 
             GameObject tileGenerated = Instantiate (tileChosen, new Vector3(randomPosition.tileX,randomPosition.tileY, 0f), Quaternion.identity) as GameObject;
 
-            // If it's the exit
+            // For the later on check to make sure exit is generated far from the player.
             if( tileArray[0].Equals(exit[0]) ){
                 // Also update the exit location
                 currExit = tileGenerated;
@@ -184,7 +203,6 @@ public class BoardManager : MonoBehaviour {
                 tileGenerated.transform.SetParent(foodHolder);
             }
 
-			
 
 		}
 
@@ -216,10 +234,17 @@ public class BoardManager : MonoBehaviour {
         */
 
         Instantiate(player, new Vector3(centerX, centerY, 0f), Quaternion.identity);
-        Debug.Log("x is:" + centerX + "  y is:" + centerY);
 
         LayoutObjectAtRandom(exit, 1, 1);
 
+
+        /** I feel like this is over complicated. Maybe should just write a layout exit method to make
+         * things more convienient. But I feel like this can be reused sometime later if we want to
+         * make tweaks to the exit or make multiple types of exits. This is more generic but may cause
+         * unecessary problems and performance issues.
+         */
+
+        exitRelocationTimes = 0;
         // Make sure the exit is far away from the player so that player won't skip some level unwantedly.
         while (CheckDistanceBetween(currExit.transform, player.transform) < tooCloseThreshold 
                && exitRelocationTimes < maxExitRelocationTimes){
@@ -228,17 +253,21 @@ public class BoardManager : MonoBehaviour {
 			LayoutObjectAtRandom(exit, 1, 1);
 		}
 
+        // If it's still very close to the player, it means this map is probably too small or 
+        // weird looking. Generate a new one instead.
         if (CheckDistanceBetween(currExit.transform, player.transform) < tooCloseThreshold){
+            Destroy(this.player.gameObject);
+            Destroy(this.currExit);
             this.SetUpScene(level, mapSize);
         }
 
 		// add the exit to radar's detectable tile set.
 		ppcRadar = GameObject.Find("PlayerPositionController").GetComponent<Radar>();
-
         ppcRadar.AddToTrackedObjects(currExit);
 
 	}
 
+    // Helper method
     private float CheckDistanceBetween( Transform t1, Transform t2){
         return Mathf.Log(Mathf.Pow((t1.position.x - t2.transform.position.x), 2) +
                          Mathf.Pow((t1.position.y - t2.transform.position.y), 2), 2);

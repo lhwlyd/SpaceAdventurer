@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MovingObjects {
+public class Enemy : MonoBehaviour {
 
 	public int playerDamage;
 
@@ -12,8 +12,10 @@ public class Enemy : MovingObjects {
 
     public Rigidbody2D rb2d;
     public float speed;
+    public CircleCollider2D circleCollider2d;
 
-	protected override void Start ()
+
+	protected virtual void Start ()
 	{
 		//Register this enemy with our instance of GameManager by adding it to a list of Enemy objects. 
 		//This allows the GameManager to issue movement commands.
@@ -27,55 +29,12 @@ public class Enemy : MovingObjects {
 
         rb2d = GetComponent<Rigidbody2D>();
 
-		//Call the start function of our base class MovingObject.
-		base.Start ();
+		circleCollider2d = GetComponent<CircleCollider2D>();
+        rb2d = GetComponent<Rigidbody2D>();
 	}
 
-    protected override void AttemptMove<T>(float xDir, float yDir){
-		if(skipMove == true){
-			skipMove = false;
-			return;
-		}
 
-		base.AttemptMove<T> (xDir, yDir);
-
-		skipMove = true;
-	}
-
-	public void MoveEnemy(){
-		int xDir = 0;
-		int yDir = 0;
-
-		if (Mathf.Abs (target.position.x - transform.position.x) < float.Epsilon) {
-			yDir = target.position.y > transform.position.y ? 1 : -1;
-		} else {
-			xDir = target.position.x > transform.position.x ? 1 : -1;
-		}
-
-		AttemptMove<Player> (xDir, yDir);
-
-
-	}
-
-	protected override void OnCantMove<T> (T component)
-	{
-		Player hitPlayer = component as Player;
-
-
-
-		hitPlayer.LoseHp (playerDamage);
-	}
-
-	void OnTriggerEnter2D(Collider2D other){
-
-		if (other.tag == "Exit" || other.tag == "RocketFire")
-		{
-            Destroy(this.gameObject);
-		}
-
-	}
-
-    void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         if(GameManager.instance.doingSetup){
             return;
@@ -99,7 +58,8 @@ public class Enemy : MovingObjects {
         //AttemptMove<Player>(xDir, yDir);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    // Use this
+    protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Player"){
             collision.gameObject.SendMessage("LoseHp", playerDamage);

@@ -111,6 +111,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BoardManager.cs" />
+    <Compile Include="Assets\Scripts\Destroying.cs" />
+    <Compile Include="Assets\Scripts\DumbEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\ExitSpinner.cs" />
     <Compile Include="Assets\Scripts\Fading.cs" />
@@ -125,6 +127,7 @@
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerPositionControllerScript.cs" />
     <Compile Include="Assets\Scripts\Radar.cs" />
+    <Compile Include="Assets\Scripts\ShootingEnemy.cs" />
     <Compile Include="Assets\Scripts\Wall.cs" />
   </ItemGroup>
   <ItemGroup>
