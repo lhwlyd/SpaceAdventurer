@@ -1,11 +1,60 @@
 fileFormatVersion: 2
 guid: 54de4bca2abaa4e71aadeb3609f9047d
-timeCreated: 1508267202
+timeCreated: 1508652055
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: lufia2riseofthesinistrals_monsters-set3_sheet_0
     21300002: lufia2riseofthesinistrals_monsters-set3_sheet_1
+    21300004: lufia2riseofthesinistrals_monsters-set3_sheet_2
+    21300006: lufia2riseofthesinistrals_monsters-set3_sheet_3
+    21300008: lufia2riseofthesinistrals_monsters-set3_sheet_4
+    21300010: lufia2riseofthesinistrals_monsters-set3_sheet_5
+    21300012: lufia2riseofthesinistrals_monsters-set3_sheet_6
+    21300014: lufia2riseofthesinistrals_monsters-set3_sheet_7
+    21300016: lufia2riseofthesinistrals_monsters-set3_sheet_8
+    21300018: lufia2riseofthesinistrals_monsters-set3_sheet_9
+    21300020: lufia2riseofthesinistrals_monsters-set3_sheet_10
+    21300022: lufia2riseofthesinistrals_monsters-set3_sheet_11
+    21300024: lufia2riseofthesinistrals_monsters-set3_sheet_12
+    21300026: lufia2riseofthesinistrals_monsters-set3_sheet_13
+    21300028: lufia2riseofthesinistrals_monsters-set3_sheet_14
+    21300030: lufia2riseofthesinistrals_monsters-set3_sheet_15
+    21300032: lufia2riseofthesinistrals_monsters-set3_sheet_16
+    21300034: lufia2riseofthesinistrals_monsters-set3_sheet_17
+    21300036: lufia2riseofthesinistrals_monsters-set3_sheet_18
+    21300038: lufia2riseofthesinistrals_monsters-set3_sheet_19
+    21300040: lufia2riseofthesinistrals_monsters-set3_sheet_20
+    21300042: lufia2riseofthesinistrals_monsters-set3_sheet_21
+    21300044: lufia2riseofthesinistrals_monsters-set3_sheet_22
+    21300046: lufia2riseofthesinistrals_monsters-set3_sheet_23
+    21300048: lufia2riseofthesinistrals_monsters-set3_sheet_24
+    21300050: lufia2riseofthesinistrals_monsters-set3_sheet_25
+    21300052: lufia2riseofthesinistrals_monsters-set3_sheet_26
+    21300054: lufia2riseofthesinistrals_monsters-set3_sheet_27
+    21300056: lufia2riseofthesinistrals_monsters-set3_sheet_28
+    21300058: lufia2riseofthesinistrals_monsters-set3_sheet_29
+    21300060: lufia2riseofthesinistrals_monsters-set3_sheet_30
+    21300062: lufia2riseofthesinistrals_monsters-set3_sheet_31
+    21300064: lufia2riseofthesinistrals_monsters-set3_sheet_32
+    21300066: lufia2riseofthesinistrals_monsters-set3_sheet_33
+    21300068: lufia2riseofthesinistrals_monsters-set3_sheet_34
+    21300070: lufia2riseofthesinistrals_monsters-set3_sheet_35
+    21300072: lufia2riseofthesinistrals_monsters-set3_sheet_36
+    21300074: lufia2riseofthesinistrals_monsters-set3_sheet_37
+    21300076: lufia2riseofthesinistrals_monsters-set3_sheet_38
+    21300078: lufia2riseofthesinistrals_monsters-set3_sheet_39
+    21300080: lufia2riseofthesinistrals_monsters-set3_sheet_40
+    21300082: lufia2riseofthesinistrals_monsters-set3_sheet_41
+    21300084: lufia2riseofthesinistrals_monsters-set3_sheet_42
+    21300086: lufia2riseofthesinistrals_monsters-set3_sheet_43
+    21300088: lufia2riseofthesinistrals_monsters-set3_sheet_44
+    21300090: lufia2riseofthesinistrals_monsters-set3_sheet_45
+    21300092: lufia2riseofthesinistrals_monsters-set3_sheet_46
+    21300094: lufia2riseofthesinistrals_monsters-set3_sheet_47
+    21300096: lufia2riseofthesinistrals_monsters-set3_sheet_48
+    21300098: lufia2riseofthesinistrals_monsters-set3_sheet_49
+  externalObjects: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -59,6 +108,7 @@ TextureImporter:
   platformSettings:
   - buildTarget: DefaultTexturePlatform
     maxTextureSize: 1024
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
     compressionQuality: 50
@@ -67,6 +117,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: Standalone
     maxTextureSize: 1024
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
     compressionQuality: 50
@@ -75,6 +126,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: iPhone
     maxTextureSize: 1024
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
     compressionQuality: 50
@@ -83,6 +135,7 @@ TextureImporter:
     overridden: 0
   - buildTarget: Android
     maxTextureSize: 1024
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
     compressionQuality: 50
@@ -96,10 +149,10 @@ TextureImporter:
       name: lufia2riseofthesinistrals_monsters-set3_sheet_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 146
-        width: 56
-        height: 52
+        x: 0
+        y: 354
+        width: 48
+        height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -110,10 +163,682 @@ TextureImporter:
       name: lufia2riseofthesinistrals_monsters-set3_sheet_1
       rect:
         serializedVersion: 2
-        x: 120
-        y: 211
+        x: 72
+        y: 399
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 402
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 399
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 402
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 361
         width: 48
-        height: 58
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 361
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 353
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 353
+        width: 48
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 354
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 354
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 353
+        width: 47
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 353
+        width: 47
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 282
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 280
+        width: 48
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 280
+        width: 48
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 287
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 287
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 278
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 278
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 279
+        width: 28
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 279
+        width: 28
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 212
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 212
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 212
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 212
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 212
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 212
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 212
+        width: 41
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 148
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 141
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 143
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 152
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 152
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 150
+        width: 56
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 140
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 74
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 74
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 70
+        width: 56
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 75
+        width: 58
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 70
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 74
+        width: 61
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 61
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 7
+        width: 62
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 61
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_45
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 7
+        width: 62
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 61
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 4
+        width: 63
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 4
+        width: 63
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lufia2riseofthesinistrals_monsters-set3_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 63
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
