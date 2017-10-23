@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour {
 
 	private Animator animator;                          //Variable of type Animator to store a reference to the enemy's Animator component.
 	private Transform target;                           //Transform to attempt to move toward each turn.
-	private bool skipMove;
+	//private bool skipMove; Not used
 
     public Rigidbody2D rb2d;
     public float speed;
@@ -39,6 +39,7 @@ public class Enemy : MonoBehaviour {
         if(GameManager.instance.doingSetup){
             return;
         }
+        // Default enemy movement will be to always float towards player.
         float yDir = (target.position.y - this.transform.position.y);
         float xDir = (target.position.x - this.transform.position.x);
         float vSquare = Mathf.Pow(xDir, 2) + Mathf.Pow(yDir, 2);

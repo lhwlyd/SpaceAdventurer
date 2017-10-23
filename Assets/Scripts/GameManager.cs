@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour {
 
         doingSetup = true;
         levelText.text = "Better luck next time, astronaut!\n\nYou have survived: " + survivedTime +" seconds\n" +
-            "Your best Recod is : " + bestRecord + " seconds, keep it up!";
+            "Your best Record is : " + bestRecord + " seconds, keep it up!";
 		levelImage.SetActive (true);
 		
 
