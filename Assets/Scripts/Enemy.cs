@@ -39,6 +39,7 @@ public class Enemy : MonoBehaviour {
         if(GameManager.instance.doingSetup){
             return;
         }
+        // Default enemy movement will be to always float towards player.
         float yDir = (target.position.y - this.transform.position.y);
         float xDir = (target.position.x - this.transform.position.x);
         float vSquare = Mathf.Pow(xDir, 2) + Mathf.Pow(yDir, 2);

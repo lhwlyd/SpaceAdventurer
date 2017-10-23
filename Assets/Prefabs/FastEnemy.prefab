@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4220654049108296}
   - component: {fileID: 212943394232562816}
-  - component: {fileID: 114316364876363142}
   - component: {fileID: 58663206349341100}
   - component: {fileID: 50361919593204268}
+  - component: {fileID: 114828223889901332}
   m_Layer: 8
   m_Name: FastEnemy
   m_TagString: FastEnemy
@@ -78,7 +78,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.85
---- !u!114 &114316364876363142
+--- !u!114 &114828223889901332
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -89,10 +89,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16b165b15e5044511bca757fa5339f6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDamage: 5
+  playerDamage: 0
   rb2d: {fileID: 0}
-  speed: 5
+  speed: 0
   circleCollider2d: {fileID: 0}
+  explosion: {fileID: 1911405549345840, guid: c99c2d3bf4d474d42935fec33acd75a5, type: 2}
 --- !u!212 &212943394232562816
 SpriteRenderer:
   m_ObjectHideFlags: 1
