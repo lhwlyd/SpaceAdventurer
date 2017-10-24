@@ -166,8 +166,8 @@ MonoBehaviour:
     y: 0
     width: 342
     height: 445
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -201,9 +201,9 @@ MonoBehaviour:
     height: 424
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: aa2f0000
+    m_SelectedIDs: e8050000
     m_LastClickedID: 0
-    m_ExpandedIDs: a6fbffff00000000
+    m_ExpandedIDs: 78f9ffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -448,8 +448,8 @@ MonoBehaviour:
     y: 445
     width: 1146
     height: 286
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -494,19 +494,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Phillip\Desktop\SpaceAdventurer\SpaceAdventurer
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 72}
-    m_SelectedIDs: 902f0000
-    m_LastClickedID: 12176
-    m_ExpandedIDs: 000000004a270000502700003a2e0000422e0000842f000000ca9a3bffffff7f
+    m_SelectedIDs: f8310000
+    m_LastClickedID: 12792
+    m_ExpandedIDs: 0000000092270000982700007e2e0000862e0000c02f000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -534,7 +534,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004a270000502700003a2e0000422e0000842f0000
+    m_ExpandedIDs: 0000000092270000982700007e2e0000862e0000c02f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -559,8 +559,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: aa2f0000
-    m_LastClickedInstanceID: 12202
+    m_SelectedInstanceIDs: e8050000
+    m_LastClickedInstanceID: 1512
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000822600007e260000c02e0000762a00007a2a000012440000b42a00000a260000902700009a2a0000c82a0000b82a0000b0270000b6350000d42a0000de2a0000a62a0000c62a0000ca2a0000be2c00007e470000b8290000d43f00007a2f00009e290000da2c0000782d00001e260000a22d00008229000000000000
     m_RenameOverlay:
@@ -633,8 +633,8 @@ MonoBehaviour:
     y: 0
     width: 390
     height: 731
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -666,7 +666,7 @@ MonoBehaviour:
     y: 92
     width: 388
     height: 710
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 720}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160
