@@ -6,6 +6,11 @@ public class Food : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+		if (collision.gameObject.GetComponent<Interactive>() != null)
+		{
+			collision.gameObject.SendMessage("Interact", this.gameObject);
+		}
+
         if(collision.tag == "Exit"){
             this.gameObject.SetActive(false);
         }

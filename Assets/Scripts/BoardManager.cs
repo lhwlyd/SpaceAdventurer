@@ -256,9 +256,9 @@ public class BoardManager : MonoBehaviour {
         // If it's still very close to the player, it means this map is probably too small or 
         // weird looking. Generate a new one instead.
         if (CheckDistanceBetween(currExit.transform, player.transform) < tooCloseThreshold){
-            Destroy(this.player.gameObject);
-            Destroy(this.currExit);
-            this.SetUpScene(level, mapSize);
+            //Destroy(this.player.gameObject);
+            //Destroy(this.currExit);
+            //this.SetUpScene(level, mapSize);
         }
 
 		// add the exit to radar's detectable tile set.

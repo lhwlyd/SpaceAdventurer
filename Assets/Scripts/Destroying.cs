@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destroying : MonoBehaviour {
+public class Destroying : Interactive {
 
     public int damageToPlayer;
 
+    /*(
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Torch" ||
@@ -17,5 +18,19 @@ public class Destroying : MonoBehaviour {
             Invoke("LoseHp", damageToPlayer);
         }
 
+    }
+    */
+
+    void Interact(GameObject inputGameobject){
+		string thisTag = inputGameobject.tag;
+		if (thisTag == "Obstacle" || thisTag == "Torch" || thisTag == "Enemy")
+		{
+			Destroy(inputGameobject);
+		}
+
+		if (thisTag == "Player")
+		{
+			inputGameobject.SendMessage("LoseHp", damageToPlayer);
+		}
     }
 }

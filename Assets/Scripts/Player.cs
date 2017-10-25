@@ -221,19 +221,25 @@ public class Player : MovingObjects {
     /**
      * Currently checking : exit / food(torch)
      */
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.tag == "Exit")
+
+        if (collision.gameObject.GetComponent<Interactive>() != null)
+		{
+			collision.gameObject.SendMessage("Interact", this.gameObject);
+		}
+
+        if (collision.tag == "Exit")
         {
             Invoke("Restart", restartLevelDelay);
 
 			enabled = false;
 
-			MoveToExit(other.gameObject.transform);
+			MoveToExit(collision.gameObject.transform);
 
 
         }
-        else if (other.tag == "Torch")
+        else if (collision.tag == "Torch")
         {
             // Hp per food goes up as hp goes down.
             int healthAdded = healthPerFood;
@@ -256,7 +262,7 @@ public class Player : MovingObjects {
 
             foodText.text = "+" + healthAdded + " Oxygen Left : " + hp + " %";
 
-			other.gameObject.SetActive(false);
+			collision.gameObject.SetActive(false);
         }
 
 

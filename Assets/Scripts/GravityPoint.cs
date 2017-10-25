@@ -13,6 +13,11 @@ public class GravityPoint : MonoBehaviour {
 
     // Update is called once per frame
     void FixedUpdate () {
+
+        if(GameManager.instance.doingSetup){
+            return;
+        }
+
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, pullRadius, LayersToPull);
 
         foreach( Collider2D obj in colliders){

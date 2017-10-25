@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{60F2BC01-A827-CCAE-A217-A19B116C16A9}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DumbEnemy.cs">
+    <Files>
+      <File FileName="Assets/Scripts/BoardManager.cs" Line="144" Column="18" />
+      <File FileName="Assets/Scripts/GravityPoint.cs" Line="20" Column="9" />
+      <File FileName="Assets/Scripts/Player.cs" Line="233" Column="10" />
+      <File FileName="Assets/Scripts/Destroying.cs" Line="23" Column="5" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="80" Column="1" />
+      <File FileName="Assets/Scripts/Interactive.cs" Line="12" Column="2" />
+      <File FileName="Assets/Scripts/Food.cs" Line="13" Column="9" />
+      <File FileName="Assets/Scripts/Wall.cs" Line="26" Column="4" />
+      <File FileName="Assets/Scripts/DumbEnemy.cs" Line="11" Column="50" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SpaceAdventurer PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

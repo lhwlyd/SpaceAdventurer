@@ -69,4 +69,11 @@ public class Enemy : MonoBehaviour {
         }
     }
 
+    protected virtual void OnTriggerEnter2D(Collider2D collision){
+        if ( collision.gameObject.GetComponent<Interactive>() != null)
+        {
+            collision.gameObject.SendMessage("Interact", this.gameObject);
+        }
+    }
+
 }

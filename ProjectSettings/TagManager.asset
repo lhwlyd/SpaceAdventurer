@@ -66,3 +66,6 @@ TagManager:
   - name: OuterWall
     uniqueID: 2313298645
     locked: 0
+  - name: Effects
+    uniqueID: 2711506147
+    locked: 0
