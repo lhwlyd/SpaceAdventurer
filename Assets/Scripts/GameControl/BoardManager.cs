@@ -62,11 +62,11 @@ public class BoardManager : MonoBehaviour {
 
     private int exitRelocationTimes = 0;
     private int maxExitRelocationTimes = 15;
-    private float tooCloseThreshold = 10f;
+    private float tooCloseThreshold = 6f;
 
 
     // Leave more than 25% ground as walkable
-    private float walkablePercent = 0.25f;
+    private float walkablePercent = 0.30f;
     private int walkableCount = 0;
 
 

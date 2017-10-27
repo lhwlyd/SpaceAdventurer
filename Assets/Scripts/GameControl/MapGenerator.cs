@@ -50,7 +50,13 @@ public class MapGenerator : MonoBehaviour{
 		centerX = center.tileX;
 		centerY = center.tileY;
 
-		return map;
+		if (center.tileX == int.MinValue && center.tileY == int.MinValue)
+		{
+            return GenerateMap(mapSize, out centerX, out centerY);
+        } else {
+            return map;
+        }
+
 	}
 
 
@@ -172,6 +178,8 @@ public class MapGenerator : MonoBehaviour{
 	}
 
 	Coord ProcessMap(){
+
+
 		List<List<Coord>> wallRegions = GetRegions (1);
 
 		int wallThreshHold = 30;
@@ -199,6 +207,12 @@ public class MapGenerator : MonoBehaviour{
 		}
 
 		survivingRooms.Sort ();
+
+        // Sometimes no room is left. In this case, generate again
+        if( survivingRooms.Count == 0){
+            return new Coord(int.MinValue, int.MinValue);
+        }
+
 		survivingRooms [0].isMainRoom = true;
 		survivingRooms [0].isAccessibleFromMainRoom = true;
 
