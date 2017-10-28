@@ -16,16 +16,12 @@ public class LightController : MonoBehaviour {
 		//offset = new Vector3(0,0,-3);
 		characterLight = GetComponent<Light> ();
         //playerControllerTransform = GameObject.FindGameObjectWithTag("PlayerPositionController").transform;
-        UpdatePlayer();
 	}
 
 	// Late update is called afte update every time.
-	void Update () {
+	public void UpdateLight ( int curHealth ) {
         //transform.position = playerControllerTransform.transform.position + offset;
-        characterLight.spotAngle = (int)(0.2 * player.GetComponent<PlayerHealth>().currentHealth) + 120;
+        characterLight.spotAngle = (int)(0.5 * curHealth) + 90;
 	}
 
-	void UpdatePlayer(){
-		player = GameObject.FindGameObjectWithTag ("Player");
-	}
 }

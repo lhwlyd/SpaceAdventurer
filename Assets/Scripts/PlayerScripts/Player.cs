@@ -44,80 +44,6 @@ public class Player : MovingObjects {
         if ( stopped || GameManager.instance.doingSetup) {
             return;
         }
-		/*
-		if (!GameManager.instance.playersTurn) {
-			return;
-		}
-
-		int horizontal = 0;
-		int vertical = 0;
-
-		horizontal = (int)Input.GetAxisRaw ("Horizontal");
-		vertical = (int)Input.GetAxisRaw ("Vertical");
-
-		if (horizontal != 0)
-			vertical = 0;
-
-		if(horizontal!=0 || vertical != 0){
-            AttemptMove<Wall> (horizontal, vertical);
-		}
-		*/
-
-
-		/**
-         *  Deprecate this moving method (inputs add force directly) since it doesn't feel physical
-        //Store the current horizontal input in the float moveHorizontal.
-        float moveHorizontal = Input.GetAxis("Horizontal");
-
-        //Store the current vertical input in the float moveVertical.
-        float moveVertical = Input.GetAxis("Vertical");
-
-        if ( moveHorizontal < 0f ){
-            this.GetComponent<SpriteRenderer>().sprite = leftSpaceMan;
-        } else {
-			if (moveHorizontal > 0f)
-			this.GetComponent<SpriteRenderer>().sprite = rightSpaceMan;
-		}
-
-        if (moveHorizontal - Mathf.Abs(moveVertical) < Mathf.Epsilon)
-        {
-            moveHorizontal *= 0.71f;
-            moveVertical *= 0.71f;
-        }
-
-
-
-        //Use the two store floats to create a new Vector2 variable movement.
-        Vector2 velocity = speed * new Vector2(moveHorizontal, moveVertical);
-
-        */
-
-		/*
-		//Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
-        rb2d.MovePosition(rb2d.position + velocity * Time.deltaTime);
-
-
-
-
-
-        float angle = Mathf.Atan2(velocity.x, velocity.y) * Mathf.Rad2Deg;
-        // Below is a lazy implementation. Not physical
-        // this.transform.rotation = Quaternion.Euler(new Vector3(0, 0, -angle));
-
-      
-
-
-        // Check for Rocket input
-        if( Input.GetKeyDown("space") && velocity.magnitude > 0){
-			FireRocket(velocity);
-			rb2d.AddForce( 30 * velocity );
-        } else {
-			rb2d.AddForce(velocity);
-		}
-
-        */
-
-		CheckIfGameOver();
 
 
 		float moveHorizontal = Input.GetAxis("Horizontal");
@@ -225,34 +151,6 @@ public class Player : MovingObjects {
 
 
         }
-        else if (collision.tag == "Torch")
-        {
-            /*
-            // Hp per food goes up as hp goes down.
-            int healthAdded = healthPerFood;
-            if (hp >= 60)
-            {
-                hp += (int)(healthPerFood / 4);
-                healthAdded = (int)(healthPerFood / 4);
-            }
-            else
-            {
-                if (hp >= 30)
-                {
-                    hp += (int)(healthPerFood / 2);
-					healthAdded = (int)(healthPerFood / 2);
-				} else {
-					hp += healthPerFood;
-                    healthAdded = healthPerFood;
-				}
-            } 
-
-            foodText.text = "+" + healthAdded + " Oxygen Left : " + hp + " %";
-
-			collision.gameObject.SetActive(false);
-            */
-        }
-
 
     }
 

@@ -10,7 +10,7 @@ public class PlayerHealth : MonoBehaviour {
 	public Slider healthSlider;                                 // Reference to the UI's health bar.
 	public Image damageImage;                                   // Reference to an image to flash on the screen on being hurt.
 	// public AudioClip deathClip;                                 // The audio clip to play when the player dies.
-	public float flashSpeed = 5f;                               // The speed the damageImage will fade at.
+	public float flashSpeed = 3f;                               // The speed the damageImage will fade at.
 	public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
 
 	Animator anim;                                              // Reference to the Animator component.
@@ -18,8 +18,8 @@ public class PlayerHealth : MonoBehaviour {
 
 	bool isDead;                                                // Whether the player is dead.
 	bool damaged;                                               // True when the player gets damaged.
-																// Use this for initialization
-
+                                                                // Use this for initialization
+    public LightController characterLightController;
 
 	private float inhaleTime;
 
@@ -33,6 +33,9 @@ public class PlayerHealth : MonoBehaviour {
 	void Awake () {
         currentHealth = GameManager.instance.playerHealth;
 		foodText = GameObject.Find("FoodText").GetComponent<Text>();
+        damageImage = GameObject.Find("DamageImage").GetComponent<Image>();
+        healthSlider = GameObject.Find("PlayerHealthSlider").GetComponent<Slider>();
+        characterLightController = GameObject.Find("CharacterLight").GetComponent<LightController>();
 
         foodText.text = "Oxygen Left " + currentHealth + " %";
 	}
@@ -66,13 +69,14 @@ public class PlayerHealth : MonoBehaviour {
         damaged = true;
         currentHealth -= amount;
         healthSlider.value = currentHealth;
+        characterLightController.UpdateLight(currentHealth);
 
         foodText.text = "-" + amount + " Oxygen Left : " + currentHealth + " %";
     }
 
     public void AddHp( int amount ){
         currentHealth += amount;
-        foodText.text = "-" + amount + " Oxygen Left : " + currentHealth + " %";
+        foodText.text = "+" + amount + " Oxygen Left : " + currentHealth + " %";
 
 	}
 
