@@ -251,26 +251,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\BoardManager.cs" />
-    <Compile Include="Assets\Scripts\Destroying.cs" />
-    <Compile Include="Assets\Scripts\DumbEnemy.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\ExitSpinner.cs" />
-    <Compile Include="Assets\Scripts\Fading.cs" />
-    <Compile Include="Assets\Scripts\FastEnemy.cs" />
-    <Compile Include="Assets\Scripts\Food.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\GravityPoint.cs" />
-    <Compile Include="Assets\Scripts\Interactive.cs" />
-    <Compile Include="Assets\Scripts\LightController.cs" />
-    <Compile Include="Assets\Scripts\Loader.cs" />
-    <Compile Include="Assets\Scripts\MainCameraManager.cs" />
-    <Compile Include="Assets\Scripts\MapGenerator.cs" />
+    <Compile Include="Assets\Scripts\EffectsScripts\Destroying.cs" />
+    <Compile Include="Assets\Scripts\EffectsScripts\ExitSpinner.cs" />
+    <Compile Include="Assets\Scripts\EffectsScripts\Fading.cs" />
+    <Compile Include="Assets\Scripts\EffectsScripts\GravityPoint.cs" />
+    <Compile Include="Assets\Scripts\EffectsScripts\Healing.cs" />
+    <Compile Include="Assets\Scripts\EffectsScripts\Interactive.cs" />
+    <Compile Include="Assets\Scripts\Enemies\DumbEnemy.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Enemies\FastEnemy.cs" />
+    <Compile Include="Assets\Scripts\GameControl\BoardManager.cs" />
+    <Compile Include="Assets\Scripts\GameControl\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GameControl\Loader.cs" />
+    <Compile Include="Assets\Scripts\GameControl\MapGenerator.cs" />
+    <Compile Include="Assets\Scripts\GameObjectsScripts\Food.cs" />
+    <Compile Include="Assets\Scripts\GameObjectsScripts\Wall.cs" />
     <Compile Include="Assets\Scripts\MovingObjects.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\PlayerPositionControllerScript.cs" />
-    <Compile Include="Assets\Scripts\Radar.cs" />
-    <Compile Include="Assets\Scripts\Wall.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\LightController.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\MainCameraManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\Player.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\PlayerPositionControllerScript.cs" />
+    <Compile Include="Assets\Scripts\UIScripts\Radar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Resources\Editor\CM Tools\TileMasterReadme.txt" />
