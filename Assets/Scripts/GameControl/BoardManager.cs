@@ -235,6 +235,8 @@ public class BoardManager : MonoBehaviour {
 
         Instantiate(player, new Vector3(centerX, centerY, 0f), Quaternion.identity);
 
+
+
         LayoutObjectAtRandom(exit, 1, 1);
 
 

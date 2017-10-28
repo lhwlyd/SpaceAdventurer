@@ -11,8 +11,5 @@ public class Food : MonoBehaviour {
 			collision.gameObject.SendMessage("Interact", this.gameObject);
 		}
 
-        if(collision.tag == "Exit"){
-            this.gameObject.SetActive(false);
-        }
     }
 }

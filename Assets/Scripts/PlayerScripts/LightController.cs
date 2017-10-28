@@ -22,7 +22,7 @@ public class LightController : MonoBehaviour {
 	// Late update is called afte update every time.
 	void Update () {
         //transform.position = playerControllerTransform.transform.position + offset;
-		characterLight.spotAngle = (int)(0.2 * player.GetComponent<Player>().hp) + 120;
+        characterLight.spotAngle = (int)(0.2 * player.GetComponent<PlayerHealth>().currentHealth) + 120;
 	}
 
 	void UpdatePlayer(){

@@ -7,16 +7,11 @@ using UnityEngine.UI;
 public class Player : MovingObjects {
 
 	public int attackDamage = 1;
-    [HideInInspector] public int healthPerFood = 10;
 	public float restartLevelDelay = 1.75f;
 
 	private Animator animator;
-	[HideInInspector]public int hp;
 
     public Rigidbody2D rb2d;
-
-    //UI control
-    public Text foodText;
 
     public float speed;
 
@@ -24,21 +19,15 @@ public class Player : MovingObjects {
 
     public AudioSource audioSource;
 
-    private float inhaleTime;
-
-    public float timeToBreathe = 1.5f;
+    public PlayerHealth healthManager;
 
     public bool stopped = false;
 
 	// Use this for initialization
-	protected override void Start () {  
+	protected override void Start () {
+        healthManager = this.GetComponent<PlayerHealth>();
+
 		animator = GetComponent<Animator> ();
-
-		hp = GameManager.instance.playerHealth;
-
-		foodText = GameObject.Find ("FoodText").GetComponent<Text>();
-
-		foodText.text = "Oxygen Left " + hp + " %";
 
         rb2d = this.GetComponent<Rigidbody2D>();
 
@@ -46,7 +35,7 @@ public class Player : MovingObjects {
 	}
 
 	private void OnDisable(){
-		GameManager.instance.playerHealth = hp;
+        GameManager.instance.playerHealth = healthManager.currentHealth;
 	}
 
     // Update is called once per frame
@@ -55,7 +44,7 @@ public class Player : MovingObjects {
         if ( stopped || GameManager.instance.doingSetup) {
             return;
         }
-        /*
+		/*
 		if (!GameManager.instance.playersTurn) {
 			return;
 		}
@@ -75,7 +64,7 @@ public class Player : MovingObjects {
 		*/
 
 
-        /**
+		/**
          *  Deprecate this moving method (inputs add force directly) since it doesn't feel physical
         //Store the current horizontal input in the float moveHorizontal.
         float moveHorizontal = Input.GetAxis("Horizontal");
@@ -103,7 +92,7 @@ public class Player : MovingObjects {
 
         */
 
-        /*
+		/*
 		//Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
         rb2d.MovePosition(rb2d.position + velocity * Time.deltaTime);
 
@@ -128,19 +117,10 @@ public class Player : MovingObjects {
 
         */
 
-        inhaleTime += Time.fixedDeltaTime;
-        GameManager.instance.survivedTime += Time.fixedDeltaTime;
-        if( inhaleTime >= timeToBreathe ){
-            inhaleTime = 0;
-            hp -= 1;
-			foodText.text = " Oxygen Left : " + hp + " %";
-
-            CheckIfGameOver();
-
-		}
+		CheckIfGameOver();
 
 
-        float moveHorizontal = Input.GetAxis("Horizontal");
+		float moveHorizontal = Input.GetAxis("Horizontal");
 
         //Store the current vertical input in the float moveVertical.
         float moveVertical = Input.GetAxis("Vertical");
@@ -188,7 +168,7 @@ public class Player : MovingObjects {
      * Create a rocket fire at opposite to the moving direction of the player.
      */
     private void FireRocket(){
-        this.LoseHp(1);
+        healthManager.TakeDamage(1);
 
         GameObject fire = Instantiate(rocketFire, new Vector3(this.transform.position.x, this.transform.position.y, 0f), this.transform.rotation) as GameObject;
 		rb2d.AddForce(100 * speed * this.transform.up);
@@ -211,11 +191,16 @@ public class Player : MovingObjects {
 
     // Use this method to hurt the player
 	public void LoseHp( int loss ){
-		hp -= loss;
 
-		foodText.text = "-" + loss  + " Oxygen Left : " + hp + " %";
+        healthManager.TakeDamage(loss);
 
 		CheckIfGameOver ();
+	}
+
+	// Use this method to hurt the player
+	public void AddHp(int increment)
+	{
+        healthManager.AddHp( increment );
 	}
 
     /**
@@ -224,10 +209,11 @@ public class Player : MovingObjects {
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.GetComponent<Interactive>() != null)
+		if (collision.gameObject.GetComponent<Interactive>() != null)
 		{
 			collision.gameObject.SendMessage("Interact", this.gameObject);
 		}
+
 
         if (collision.tag == "Exit")
         {
@@ -241,6 +227,7 @@ public class Player : MovingObjects {
         }
         else if (collision.tag == "Torch")
         {
+            /*
             // Hp per food goes up as hp goes down.
             int healthAdded = healthPerFood;
             if (hp >= 60)
@@ -263,6 +250,7 @@ public class Player : MovingObjects {
             foodText.text = "+" + healthAdded + " Oxygen Left : " + hp + " %";
 
 			collision.gameObject.SetActive(false);
+            */
         }
 
 
@@ -290,29 +278,12 @@ public class Player : MovingObjects {
 		objectToMove.transform.position = end;
 	}
 
-    protected override void AttemptMove<T>(float xDir, float yDir){
-		hp--;
-
-        foodText.text = "Oxygen Left : " + hp + " %";
-
-		base.AttemptMove<T> (xDir, yDir);
-
-		RaycastHit2D hit;
-
-		// move returns true when player can successfully move into the new place
-		if(Move(xDir, yDir, out hit)){
-			//play sound
-		}
-
-		CheckIfGameOver ();
-
-	}
 
     /**
-     * Always call this every time player's attacked / loss hp
+     * Always call this every time player's lose hp
      */
 	private void CheckIfGameOver(){
-		if( hp <= 0){
+        if( healthManager.currentHealth <= 0){
             this.enabled = false;
             //stopped = true;
             this.gameObject.SetActive(false);

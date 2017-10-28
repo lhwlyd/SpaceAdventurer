@@ -255,6 +255,7 @@
     <Compile Include="Assets\Scripts\EffectsScripts\ExitSpinner.cs" />
     <Compile Include="Assets\Scripts\EffectsScripts\Fading.cs" />
     <Compile Include="Assets\Scripts\EffectsScripts\GravityPoint.cs" />
+    <Compile Include="Assets\Scripts\EffectsScripts\Healing.cs" />
     <Compile Include="Assets\Scripts\EffectsScripts\Interactive.cs" />
     <Compile Include="Assets\Scripts\Enemies\DumbEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
@@ -269,6 +270,7 @@
     <Compile Include="Assets\Scripts\PlayerScripts\LightController.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\MainCameraManager.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\Player.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerPositionControllerScript.cs" />
     <Compile Include="Assets\Scripts\UIScripts\Radar.cs" />
   </ItemGroup>
