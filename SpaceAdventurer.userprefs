@@ -1,16 +1,8 @@
 ﻿<Properties StartupConfiguration="{60F2BC01-A827-CCAE-A217-A19B116C16A9}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EffectsScripts/Hurting.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerScripts/PlayerGears.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameControl/BoardManager.cs" Line="237" Column="9" />
-      <File FileName="Assets/Scripts/GameControl/MapGenerator.cs" Line="14" Column="63" />
-      <File FileName="Assets/Scripts/GameObjectsScripts/Wall.cs" Line="11" Column="4" />
-      <File FileName="Assets/Scripts/EffectsScripts/GravityPoint.cs" Line="31" Column="43" />
-      <File FileName="Assets/Scripts/EffectsScripts/Healing.cs" Line="13" Column="1" />
-      <File FileName="Assets/Scripts/GameObjectsScripts/Food.cs" Line="8" Column="6" />
-      <File FileName="Assets/Scripts/PlayerScripts/Player.cs" Line="111" Column="5" />
-      <File FileName="Assets/Scripts/PlayerScripts/PlayerGears.cs" Line="26" Column="20" />
-      <File FileName="Assets/Scripts/EffectsScripts/Destroying.cs" Line="22" Column="4" />
-      <File FileName="Assets/Scripts/EffectsScripts/Hurting.cs" Line="7" Column="1" />
+      <File FileName="Assets/Scripts/Enemies/DumbEnemy.cs" Line="13" Column="51" />
+      <File FileName="Assets/Scripts/PlayerScripts/PlayerGears.cs" Line="18" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.SpaceAdventurer PreferredExecutionTarget="Unity.Editor" />

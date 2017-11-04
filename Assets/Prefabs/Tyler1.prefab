@@ -446,9 +446,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileLeft: 0
-  LaunchableProjectile:
+  launchableProjectiles:
   - {fileID: 1032626205727682, guid: b07016a39bdbc4cf1809a414c99c3cab, type: 2}
   - {fileID: 1778128358527322, guid: bafd63ac6e960425db53084fb1eb24bd, type: 2}
+  projectileUI:
+  - {fileID: 1507562145081492, guid: de70b3e591b8247d1b1b62ee045b4198, type: 2}
+  - {fileID: 1192559010858536, guid: 81fce89751b6d43d589270b53bd142e3, type: 2}
 --- !u!212 &212598713090582442
 SpriteRenderer:
   m_ObjectHideFlags: 1

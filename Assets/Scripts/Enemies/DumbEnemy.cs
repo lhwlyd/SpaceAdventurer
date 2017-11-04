@@ -12,7 +12,7 @@ public class DumbEnemy : Enemy {
     {
         if( collision.gameObject.tag == "Player"){
 			GameObject thisExplosion = Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity) as GameObject;
-			Destroy(thisExplosion, 2f);
+			Destroy(thisExplosion, 1f);
         }
 
     }
