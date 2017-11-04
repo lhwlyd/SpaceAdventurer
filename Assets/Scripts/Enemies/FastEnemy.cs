@@ -10,9 +10,10 @@ using UnityEngine;
 public class FastEnemy : Enemy
 {
     public GameObject explosion;
-    public bool hasCharged = true; // Whether or not the enemy has charged
+    public bool hasCharged; // Whether or not the enemy has charged
     float xDir;
     float yDir;
+    float vSquare;
 
     private Animator animator;
     private Transform target;
@@ -33,6 +34,8 @@ public class FastEnemy : Enemy
 
         circleCollider2d = GetComponent<CircleCollider2D>();
         rb2d = GetComponent<Rigidbody2D>();
+
+        this.hasCharged = true;
     }
 
     /**
@@ -46,15 +49,15 @@ public class FastEnemy : Enemy
         if (GameManager.instance.doingSetup)
             return;
 
-        if(hasCharged)
+        if(this.hasCharged)
         {
             // Reset target
+            Debug.Log("Reset Target: xDir = " + xDir + ", yDir = " + yDir);
             yDir = (target.position.y - this.transform.position.y);
             xDir = (target.position.x - this.transform.position.x);
+            vSquare = Mathf.Pow(xDir, 2) + Mathf.Pow(yDir, 2);
             hasCharged = false;
         }
-
-        float vSquare = Mathf.Pow(xDir, 2) + Mathf.Pow(yDir, 2);
 
         Vector2 velocity = new Vector2(xDir, yDir);
         // Control the velocity's value to be always speed^2
@@ -69,7 +72,9 @@ public class FastEnemy : Enemy
             velocity *= speed;
         }
 
+        Debug.Log("Moving: xDir = " + xDir + ", yDir = " + yDir);
         rb2d.MovePosition(rb2d.position + velocity * Time.deltaTime);
+
     }
 
     protected override void OnCollisionEnter2D(Collision2D collision)
@@ -78,7 +83,8 @@ public class FastEnemy : Enemy
         {
             GameObject thisExplosion = Instantiate(explosion, this.gameObject.transform.position, Quaternion.identity) as GameObject;
             Destroy(thisExplosion, 2f);
+            Destroy(this.gameObject);
         }
-        hasCharged = true;
+        this.hasCharged = true;
     }
 }
