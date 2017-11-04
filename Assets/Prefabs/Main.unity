@@ -1856,7 +1856,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Night 1
+  m_Text: 'Night 1
+
+    Press R to fire projectile
+
+    And also press R to restart after you die.'
 --- !u!222 &2023146802
 CanvasRenderer:
   m_ObjectHideFlags: 0
