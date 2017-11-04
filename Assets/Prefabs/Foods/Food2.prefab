@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 212074958096390876}
   - component: {fileID: 61117201223836130}
   - component: {fileID: 114891239626907882}
-  - component: {fileID: 114473984450941222}
+  - component: {fileID: 114231911214862372}
   m_Layer: 8
   m_Name: Food2
   m_TagString: Torch
@@ -119,7 +119,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.0625, y: 1.0625}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -164,7 +164,7 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114473984450941222
+--- !u!114 &114231911214862372
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -172,10 +172,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1553620946227194}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c338b54c6a77f413f84f01c40a8856f5, type: 3}
+  m_Script: {fileID: 11500000, guid: cb00c090cf5bb4a5686999a2e214cc96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healAmount: 3
+  projectileTypeNumber: 1
 --- !u!114 &114891239626907882
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -221,7 +221,7 @@ SpriteRenderer:
   m_SortingLayerID: -2045810319
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300250, guid: 0573c59efcaf6413f85e3d1d478ad6ee, type: 3}
+  m_Sprite: {fileID: 21300086, guid: a4512541c83464108bebe73e79c48121, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

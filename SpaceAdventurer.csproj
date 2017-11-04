@@ -258,6 +258,7 @@
     <Compile Include="Assets\Scripts\EffectsScripts\Healing.cs" />
     <Compile Include="Assets\Scripts\EffectsScripts\Hurting.cs" />
     <Compile Include="Assets\Scripts\EffectsScripts\Interactive.cs" />
+    <Compile Include="Assets\Scripts\EffectsScripts\ProjectilesOnGround.cs" />
     <Compile Include="Assets\Scripts\Enemies\DumbEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemies\FastEnemy.cs" />
