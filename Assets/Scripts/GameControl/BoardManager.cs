@@ -35,11 +35,10 @@ public class BoardManager : MonoBehaviour {
 	public Count wallCount = new Count(10,15);
 	public GameObject[] exit;
 	public GameObject player;
-	public GameObject[] floorTiles;
+    public GameObject[] roadTiles;
 	public GameObject[] foodTiles;
     public GameObject[] enemyTiles;
 	public GameObject[] wallTiles;
-	public GameObject[] roadTiles;
 	public GameObject outerWallTile;
 
 	public int centerX;
@@ -154,7 +153,7 @@ public class BoardManager : MonoBehaviour {
 				GameObject toInstantiate;
 
 				if (map [x, y] == 0) {
-					toInstantiate = floorTiles [Random.Range (0, floorTiles.Length)];
+					toInstantiate = roadTiles [Random.Range (0, roadTiles.Length)];
 				} else {
                     toInstantiate = outerWallTile;
 				}

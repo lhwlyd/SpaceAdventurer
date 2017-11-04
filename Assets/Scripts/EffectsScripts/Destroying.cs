@@ -4,23 +4,6 @@ using UnityEngine;
 
 public class Destroying : Interactive {
 
-    public int damageToPlayer;
-
-    /*(
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Torch" ||
-           collision.gameObject.tag == "Enemy"){
-            Destroy(collision.gameObject);
-        }
-
-        if(collision.gameObject.tag == "Player"){
-            Invoke("LoseHp", damageToPlayer);
-        }
-
-    }
-    */
-
     void Interact(GameObject inputGameobject){
 		string thisTag = inputGameobject.tag;
 		if (thisTag == "Obstacle" || thisTag == "Torch" || thisTag == "Enemy")
@@ -28,9 +11,13 @@ public class Destroying : Interactive {
 			Destroy(inputGameobject);
 		}
 
+        /* Moved to a new effect called hurting. This being here will cause the 
+         * screen to flash red when we don't want it to.
+         *
 		if (thisTag == "Player")
 		{
 			inputGameobject.SendMessage("LoseHp", damageToPlayer);
 		}
+		*/
     }
 }

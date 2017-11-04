@@ -21,11 +21,15 @@ public class Player : MovingObjects {
 
     public PlayerHealth healthManager;
 
+    public PlayerGears playerGearManager;
+
     public bool stopped = false;
 
 	// Use this for initialization
 	protected override void Start () {
         healthManager = this.GetComponent<PlayerHealth>();
+
+        playerGearManager = this.GetComponent<PlayerGears>();
 
 		animator = GetComponent<Animator> ();
 
@@ -89,25 +93,21 @@ public class Player : MovingObjects {
 			FireRocket();
 		}
 
+        if( Input.GetKeyDown("r") ){
+            playerGearManager.LaunchProjectile( this.gameObject.transform, this.gameObject.transform.rotation );
+        }
+
 	}
     /**
      * Create a rocket fire at opposite to the moving direction of the player.
      */
     private void FireRocket(){
-        healthManager.TakeDamage(1);
-
         GameObject fire = Instantiate(rocketFire, new Vector3(this.transform.position.x, this.transform.position.y, 0f), this.transform.rotation) as GameObject;
 		rb2d.AddForce(100 * speed * this.transform.up);
 		fire.transform.Rotate(0,0,180);
         fire.transform.SetParent(this.transform);
         Destroy(fire, 1f);
     }
-
-	protected override void OnCantMove<T> (T component){
-        Wall hitWall = component as Wall;
-
-        hitWall.TakeDamage();
-	}
 
 	private void Restart(){
 

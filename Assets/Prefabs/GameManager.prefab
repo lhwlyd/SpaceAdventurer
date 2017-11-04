@@ -101,9 +101,9 @@ MonoBehaviour:
   exit:
   - {fileID: 1180206265571216, guid: 885ca0b9eb126409a92849522333e17f, type: 2}
   player: {fileID: 1768708494300930, guid: cdaaa94848d634b8c95db9e721c35ad2, type: 2}
-  floorTiles:
-  - {fileID: 1746339235243440, guid: 3f40a3c222048453eb2599baad87df12, type: 2}
-  - {fileID: 1321616096489970, guid: 2e004281b3c2e4b2aa20e5820d34c097, type: 2}
+  roadTiles:
+  - {fileID: 1321616096489970, guid: e301ea438c0f14b04899cbb1499af566, type: 2}
+  - {fileID: 1321616096489970, guid: e301ea438c0f14b04899cbb1499af566, type: 2}
   foodTiles:
   - {fileID: 1741505592017278, guid: d2e6b030a065a44949ded10c8760e55f, type: 2}
   - {fileID: 1553620946227194, guid: ca177d70cd1514f9eac654369fe31769, type: 2}
@@ -115,12 +115,9 @@ MonoBehaviour:
   - {fileID: 1774073386206978, guid: ef8a1bd20c1e84060ab02132ea7c347a, type: 2}
   - {fileID: 1978216044089814, guid: 1a020b1b33adf412e9e00b6ea159b4e6, type: 2}
   wallTiles:
-  - {fileID: 1768142151568840, guid: 70ee2b89cc150402393527c018327c5f, type: 2}
-  - {fileID: 1330902677574734, guid: d8ac69d9b5e8a43f7943fd82bcec9c6f, type: 2}
-  - {fileID: 1614206341098582, guid: d24619d54e8ea4df3bc5d1730a3e772c, type: 2}
-  roadTiles:
-  - {fileID: 1374484985355394, guid: 06b3f881e8c954254bbbd818632d3c32, type: 2}
-  - {fileID: 1766440076977108, guid: e15e0f91dba834842b97be39b3b8d3d5, type: 2}
+  - {fileID: 1768142151568840, guid: f4057e4fd351e4a879d66827169f2617, type: 2}
+  - {fileID: 1330902677574734, guid: 4585b1d9e56e24e57b1ab8a33ddf1a55, type: 2}
+  - {fileID: 1614206341098582, guid: 6149a430b603649ecbb7bc51bd7815b7, type: 2}
   outerWallTile: {fileID: 1788154617825678, guid: e09add6a9c5ef45b8bf14a7e8844c45c,
     type: 2}
   centerX: 0

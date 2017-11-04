@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114552920814130130}
   - component: {fileID: 58378866813795046}
   - component: {fileID: 82197582958264110}
+  - component: {fileID: 114238898550844576}
   m_Layer: 8
   m_Name: HarmfulExplosion
   m_TagString: Untagged
@@ -138,6 +139,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114238898550844576
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1911405549345840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a5a8e182757944e1803197fc63ce77c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToPlayer: 3
 --- !u!114 &114552920814130130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -149,7 +162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8c5f41bdc8f4cf3938ddaf77b7eed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToPlayer: 2
 --- !u!212 &212204621401313082
 SpriteRenderer:
   m_ObjectHideFlags: 1

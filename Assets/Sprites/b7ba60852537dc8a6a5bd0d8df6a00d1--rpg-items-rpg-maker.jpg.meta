@@ -1,0 +1,3253 @@
+fileFormatVersion: 2
+guid: a4512541c83464108bebe73e79c48121
+timeCreated: 1509576667
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_0
+    21300002: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_1
+    21300004: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_2
+    21300006: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_3
+    21300008: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_4
+    21300010: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_5
+    21300012: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_6
+    21300014: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_7
+    21300016: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_8
+    21300018: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_9
+    21300020: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_10
+    21300022: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_11
+    21300024: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_12
+    21300026: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_13
+    21300028: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_14
+    21300030: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_15
+    21300032: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_16
+    21300034: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_17
+    21300036: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_18
+    21300038: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_19
+    21300040: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_20
+    21300042: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_21
+    21300044: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_22
+    21300046: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_23
+    21300048: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_24
+    21300050: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_25
+    21300052: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_26
+    21300054: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_27
+    21300056: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_28
+    21300058: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_29
+    21300060: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_30
+    21300062: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_31
+    21300064: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_32
+    21300066: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_33
+    21300068: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_34
+    21300070: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_35
+    21300072: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_36
+    21300074: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_37
+    21300076: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_38
+    21300078: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_39
+    21300080: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_40
+    21300082: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_41
+    21300084: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_42
+    21300086: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_43
+    21300088: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_44
+    21300090: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_45
+    21300092: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_46
+    21300094: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_47
+    21300096: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_48
+    21300098: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_49
+    21300100: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_50
+    21300102: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_51
+    21300104: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_52
+    21300106: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_53
+    21300108: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_54
+    21300110: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_55
+    21300112: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_56
+    21300114: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_57
+    21300116: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_58
+    21300118: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_59
+    21300120: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_60
+    21300122: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_61
+    21300124: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_62
+    21300126: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_63
+    21300128: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_64
+    21300130: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_65
+    21300132: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_66
+    21300134: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_67
+    21300136: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_68
+    21300138: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_69
+    21300140: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_70
+    21300142: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_71
+    21300144: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_72
+    21300146: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_73
+    21300148: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_74
+    21300150: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_75
+    21300152: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_76
+    21300154: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_77
+    21300156: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_78
+    21300158: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_79
+    21300160: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_80
+    21300162: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_81
+    21300164: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_82
+    21300166: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_83
+    21300168: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_84
+    21300170: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_85
+    21300172: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_86
+    21300174: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_87
+    21300176: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_88
+    21300178: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_89
+    21300180: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_90
+    21300182: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_91
+    21300184: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_92
+    21300186: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_93
+    21300188: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_94
+    21300190: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_95
+    21300192: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_96
+    21300194: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_97
+    21300196: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_98
+    21300198: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_99
+    21300200: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_100
+    21300202: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_101
+    21300204: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_102
+    21300206: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_103
+    21300208: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_104
+    21300210: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_105
+    21300212: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_106
+    21300214: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_107
+    21300216: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_108
+    21300218: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_109
+    21300220: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_110
+    21300222: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_111
+    21300224: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_112
+    21300226: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_113
+    21300228: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_114
+    21300230: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_115
+    21300232: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_116
+    21300234: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_117
+    21300236: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_118
+    21300238: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_119
+    21300240: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_120
+    21300242: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_121
+    21300244: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_122
+    21300246: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_123
+    21300248: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_124
+    21300250: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_125
+    21300252: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_126
+    21300254: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_127
+    21300256: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_128
+    21300258: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_129
+    21300260: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_130
+    21300262: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_131
+    21300264: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_132
+    21300266: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_133
+    21300268: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_134
+    21300270: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_135
+    21300272: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_136
+    21300274: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_137
+    21300276: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_138
+    21300278: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_139
+    21300280: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_140
+    21300282: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_141
+    21300284: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_142
+    21300286: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_143
+    21300288: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_144
+    21300290: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_145
+    21300292: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_146
+    21300294: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_147
+    21300296: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_148
+    21300298: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_149
+    21300300: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_150
+    21300302: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_151
+    21300304: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_152
+    21300306: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_153
+    21300308: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_154
+    21300310: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_155
+    21300312: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_156
+    21300314: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_157
+    21300316: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_158
+    21300318: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_159
+    21300320: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_160
+    21300322: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_161
+    21300324: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_162
+    21300326: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_163
+    21300328: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_164
+    21300330: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_165
+    21300332: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_166
+    21300334: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_167
+    21300336: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_168
+    21300338: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_169
+    21300340: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_170
+    21300342: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_171
+    21300344: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_172
+    21300346: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_173
+    21300348: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_174
+    21300350: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_175
+    21300352: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_176
+    21300354: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_177
+    21300356: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_178
+    21300358: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_179
+    21300360: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_180
+    21300362: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_181
+    21300364: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_182
+    21300366: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_183
+    21300368: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_184
+    21300370: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_185
+    21300372: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_186
+    21300374: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_187
+    21300376: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_188
+    21300378: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_189
+    21300380: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_190
+    21300382: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_191
+    21300384: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_192
+    21300386: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_193
+    21300388: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_194
+    21300390: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_195
+    21300392: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_196
+    21300394: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_197
+    21300396: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_198
+    21300398: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_199
+    21300400: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_200
+    21300402: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_201
+    21300404: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_202
+    21300406: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_203
+    21300408: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_204
+    21300410: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_205
+    21300412: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_206
+    21300414: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_207
+    21300416: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_208
+    21300418: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_209
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 476
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 476
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 476
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 476
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 476
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 476
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 476
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_7
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 476
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_8
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 476
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_9
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 476
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_10
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 476
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_11
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 476
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_12
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 476
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_13
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 476
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 442
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_15
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 442
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_16
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 442
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_17
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 442
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_18
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 442
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_19
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 442
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_20
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 442
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_21
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 442
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_22
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 442
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_23
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 442
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_24
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 442
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_25
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 442
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_26
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 442
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_27
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 442
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 408
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_29
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 408
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_30
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 408
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_31
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 408
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_32
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 408
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_33
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 408
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_34
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 408
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_35
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 408
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_36
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 408
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_37
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 408
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_38
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 408
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_39
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 408
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_40
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 408
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_41
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 408
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_43
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_44
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_45
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_46
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_47
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_48
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_49
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_50
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_51
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_52
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_53
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_54
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_55
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 374
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_57
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_58
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_59
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_60
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_61
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_62
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_63
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_64
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_65
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_66
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_67
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_68
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_69
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 340
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_71
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_72
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_73
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_74
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_75
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_76
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_77
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_78
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_79
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_80
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_81
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_82
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_83
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 306
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_85
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_86
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_87
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_88
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_89
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_90
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_91
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_92
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_93
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_94
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_95
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_96
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_97
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 272
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_99
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_100
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_101
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_102
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_103
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_104
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_105
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_106
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_107
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_108
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_109
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_110
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_111
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 238
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_113
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_114
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_115
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_116
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_117
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_118
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_119
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_120
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_121
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_122
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_123
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_124
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_125
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 204
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_127
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_128
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_129
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_130
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_131
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_132
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_133
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_134
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_135
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_136
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_137
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_138
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_139
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 170
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_141
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_142
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_143
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_144
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_145
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_146
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_147
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_148
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_149
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_150
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_151
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_152
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_153
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 136
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_154
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_155
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_156
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_157
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_158
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_159
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_160
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_161
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_162
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_163
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_164
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_165
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_166
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_167
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 102
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_168
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_169
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_170
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_171
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_172
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_173
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_174
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_175
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_176
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_177
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_178
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_179
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_180
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_181
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 68
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_182
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_183
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_184
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_185
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_186
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_187
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_188
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_189
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_190
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_191
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_192
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_193
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_194
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_195
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 34
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_196
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_197
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_198
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_199
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_200
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_201
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_202
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_203
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_204
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_205
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_206
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_207
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_208
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: b7ba60852537dc8a6a5bd0d8df6a00d1--rpg-items-rpg-maker_209
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 0
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

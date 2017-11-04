@@ -1,18 +1,14 @@
 ﻿<Properties StartupConfiguration="{60F2BC01-A827-CCAE-A217-A19B116C16A9}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerScripts/MainCameraManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemies/FastEnemy.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameControl/BoardManager.cs" Line="237" Column="9" />
-      <File FileName="Assets/Scripts/GameControl/MapGenerator.cs" Line="194" Column="9" />
-      <File FileName="Assets/Scripts/EffectsScripts/Destroying.cs" Line="2" Column="34" />
-      <File FileName="Assets/Scripts/GameObjectsScripts/Wall.cs" Line="23" Column="1" />
-      <File FileName="Assets/Scripts/EffectsScripts/GravityPoint.cs" Line="31" Column="44" />
-      <File FileName="Assets/Scripts/EffectsScripts/Healing.cs" Line="13" Column="55" />
-      <File FileName="Assets/Scripts/GameObjectsScripts/Food.cs" Line="16" Column="1" />
-      <File FileName="Assets/Scripts/PlayerScripts/Player.cs" Line="61" Column="61" />
-      <File FileName="Assets/Scripts/PlayerScripts/PlayerHealth.cs" Line="62" Column="9" />
-      <File FileName="Assets/Scripts/GameControl/GameManager.cs" Line="22" Column="28" />
-      <File FileName="Assets/Scripts/PlayerScripts/LightController.cs" Line="24" Column="57" />
-      <File FileName="Assets/Scripts/PlayerScripts/MainCameraManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemies/DumbEnemy.cs" Line="13" Column="51" />
+      <File FileName="Assets/Scripts/PlayerScripts/PlayerGears.cs" Line="48" Column="50" />
+      <File FileName="Assets/Scripts/GameObjectsScripts/Food.cs" Line="14" Column="6" />
+      <File FileName="Assets/Scripts/EffectsScripts/ProjectilesOnGround.cs" Line="14" Column="111" />
+      <File FileName="Assets/Scripts/EffectsScripts/Interactive.cs" Line="5" Column="45" />
+      <File FileName="Assets/Scripts/EffectsScripts/Healing.cs" Line="9" Column="1" />
+      <File FileName="Assets/Scripts/GameControl/BoardManager.cs" Line="38" Column="34" />
+      <File FileName="Assets/Scripts/Enemies/FastEnemy.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.SpaceAdventurer PreferredExecutionTarget="Unity.Editor" />

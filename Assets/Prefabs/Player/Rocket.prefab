@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 70676438478445756}
   - component: {fileID: 50005354614962934}
   - component: {fileID: 114314858488468312}
+  - component: {fileID: 114724505961212482}
   m_Layer: 8
   m_Name: Rocket
   m_TagString: RocketFire
@@ -107,7 +108,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8c5f41bdc8f4cf3938ddaf77b7eed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToPlayer: 0
+--- !u!114 &114724505961212482
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1611369444751620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a5a8e182757944e1803197fc63ce77c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToPlayer: 1
 --- !u!212 &212734253800518208
 SpriteRenderer:
   m_ObjectHideFlags: 1
