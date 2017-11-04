@@ -22,13 +22,13 @@ public class GravityPoint : MonoBehaviour {
 
         foreach( Collider2D obj in colliders){
             Rigidbody2D rb2d = obj.GetComponent<Rigidbody2D>();
-            if(obj.tag == "Torch"){
-                obj.gameObject.SetActive(false);
+            if( this.gameObject.tag == "Exit" && obj.tag == "Torch"){
+                Destroy(obj.gameObject);
                 continue;
             } else {
                 // Exit should kill all walls in its radius.
                 if( this.gameObject.tag == "Exit" && obj.tag == "Obstacle"){
-                    obj.gameObject.SetActive(false);
+                    Destroy(obj.gameObject);
                 }
             }
 

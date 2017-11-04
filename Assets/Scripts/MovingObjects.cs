@@ -54,27 +54,5 @@ public abstract class MovingObjects : MonoBehaviour {
 
 	}
 
-    // Deprecated
-    protected virtual void AttemptMove<T> (float xDir, float yDir) where T : Component{
-		//hit also get updated in the move method since there's an out param
-		RaycastHit2D hit;
-		bool canMove = Move ( xDir, yDir, out hit);
 
-		if(hit.transform == null){
-			return;
-		}
-
-		T hitComponent = hit.transform.GetComponent<T>();
-
-		//!canMove only means can't pass through, not necessarily interact.
-		if(!canMove && hitComponent != null){
-			OnCantMove(hitComponent);
-		}
-	}
-
-	/*
-	 * interaction happens, *** deprecated
-	 */
-	protected abstract void OnCantMove<T> (T component)
-		where T : Component;
 }

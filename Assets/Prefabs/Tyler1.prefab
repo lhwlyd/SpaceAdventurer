@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 58341054498776630}
   - component: {fileID: 70494289922514196}
   - component: {fileID: 114393332693391328}
+  - component: {fileID: 114680586198581206}
   m_Layer: 8
   m_Name: Tyler1
   m_TagString: Player
@@ -411,6 +412,7 @@ MonoBehaviour:
   rocketFire: {fileID: 1611369444751620, guid: b5b6ac394c6ae4c32a520925a7aa600b, type: 2}
   audioSource: {fileID: 0}
   healthManager: {fileID: 0}
+  playerGearManager: {fileID: 0}
   stopped: 0
 --- !u!114 &114393332693391328
 MonoBehaviour:
@@ -429,8 +431,24 @@ MonoBehaviour:
   damageImage: {fileID: 0}
   flashSpeed: 5
   flashColour: {r: 1, g: 0, b: 0, a: 0.1}
+  characterLightController: {fileID: 0}
   timeToBreathe: 1.5
   foodText: {fileID: 0}
+--- !u!114 &114680586198581206
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1768708494300930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3e39d61b121457b80ff9c7c20e830b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileLeft: 0
+  LaunchableProjectile:
+  - {fileID: 1032626205727682, guid: b07016a39bdbc4cf1809a414c99c3cab, type: 2}
+  - {fileID: 1778128358527322, guid: bafd63ac6e960425db53084fb1eb24bd, type: 2}
 --- !u!212 &212598713090582442
 SpriteRenderer:
   m_ObjectHideFlags: 1
