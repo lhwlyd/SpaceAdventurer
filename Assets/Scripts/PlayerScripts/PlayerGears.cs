@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class PlayerGears : MonoBehaviour {
 
-    // A launchable rocket!
-    public int projectileLeft;
+    // We only want one gear manager. Implement this later together with the 
+    // static player.
+    //public static PlayerGears instance = null;
+
+	// A launchable rocket!
+	public int projectileLeft;
     public GameObject[] launchableProjectiles;
     public GameObject[] projectileUI;
 
@@ -14,18 +18,36 @@ public class PlayerGears : MonoBehaviour {
 
     private Transform PUITransform; // UI location
 
-    void Start()
+    void Awake()
     {
-        projectileLeft = 0;
-        arsenal = new Stack<GameObject>();
-        PUITransform = GameObject.Find("ProjectilesUI").transform;
+        /*
+		if (instance == null)
+		{
+			instance = this;
+		}
+		else if (instance != this)
+		{
+			Destroy(gameObject);
+		}
 
+        DontDestroyOnLoad(gameObject);
 
-		// Initialize with one random launchable item.
-		PickUpProjectile( Random.Range(0, launchableProjectiles.Length) );
-		PickUpProjectile(Random.Range(0, launchableProjectiles.Length));
+        */ 
+  		arsenal = new Stack<GameObject>();
+		PUITransform = GameObject.Find("ProjectilesUI").transform;
+		projectileLeft = 0;
+        ReloadRandom(2);
 
 	}
+
+    private void ReloadRandom(int amount){
+
+        // Initialize with one random launchable item.
+        for (int i = 0; i < amount; i++){
+			PickUpProjectile(Random.Range(0, launchableProjectiles.Length));
+		}
+		
+    }
 
     // Launch a projectile, can be something fun e.g. food / flip-flops / a small asteroid etc
     public void LaunchProjectile(Transform fireLocation, Quaternion playerFacing){

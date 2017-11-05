@@ -111,7 +111,7 @@ public class Player : MovingObjects {
 
 	private void Restart(){
 
-		SceneManager.LoadScene (0);
+		SceneManager.LoadScene ("Main");
 	}
 
 
@@ -182,8 +182,7 @@ public class Player : MovingObjects {
      */
 	private void CheckIfGameOver(){
         if( healthManager.currentHealth <= 0){
-            this.enabled = false;
-            //stopped = true;
+            //this.enabled = false;
             this.gameObject.SetActive(false);
             GameManager.instance.GameOver ();
 		}

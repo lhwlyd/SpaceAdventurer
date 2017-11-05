@@ -53,13 +53,14 @@ public class GameManager : MonoBehaviour {
 
 		enemies = new List<Enemy> ();
 		boardScript = GetComponent<BoardManager> ();
+        level = 1;
+        survivedTime = 0;
 		InitGame ();
 	}
 
 	void InitGame(){
 		doingSetup = true;
 
-        level = 1;
 		mapSize = level * 5 + 30;
 
 		levelImage = GameObject.Find ("LevelImage");
@@ -71,8 +72,6 @@ public class GameManager : MonoBehaviour {
 		Invoke ("HideLevelImage", levelStartingDelay);
 
         enemies.Clear();
-
-		survivedTime = 0;
 
 		boardScript.SetUpScene (level, mapSize);
 	}
@@ -102,6 +101,8 @@ public class GameManager : MonoBehaviour {
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.R));
 
         level = 0;
+        playerHealth = 100;
+        survivedTime = 0;
         SceneManager.LoadScene(0);
     }
 

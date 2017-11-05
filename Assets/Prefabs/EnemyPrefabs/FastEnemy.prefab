@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114828223889901332}
   m_Layer: 8
   m_Name: FastEnemy
-  m_TagString: FastEnemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

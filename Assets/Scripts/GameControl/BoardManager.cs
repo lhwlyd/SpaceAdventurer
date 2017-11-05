@@ -129,6 +129,7 @@ public class BoardManager : MonoBehaviour {
 
         /** Make sure there's enough place to put all elements we want on the map.
          */
+        int generateTimes = 0;
         do
         {
             walkableCount = 0;
@@ -140,8 +141,8 @@ public class BoardManager : MonoBehaviour {
                     walkableCount += 1;
                 }
             }
-            Debug.Log("generate map once");
-        } while ((float)(walkableCount / mapSize * mapSize) < walkablePercent);
+            generateTimes++;
+        } while ((float)(walkableCount / mapSize * mapSize) < walkablePercent && generateTimes < 20);
 
 
         // Set up the walls and grounds
@@ -245,6 +246,7 @@ public class BoardManager : MonoBehaviour {
          * unecessary problems and performance issues.
          */
 
+        /*
         exitRelocationTimes = 0;
         // Make sure the exit is far away from the player so that player won't skip some level unwantedly.
         while (CheckDistanceBetween(currExit.transform, player.transform) < tooCloseThreshold 
@@ -252,7 +254,10 @@ public class BoardManager : MonoBehaviour {
             exitRelocationTimes++;
             Destroy(currExit);
 			LayoutObjectAtRandom(exit, 1, 1);
+            Debug.Log("Too close !");
 		}
+		*/
+
 
         // If it's still very close to the player, it means this map is probably too small or 
         // weird looking. Generate a new one instead.
