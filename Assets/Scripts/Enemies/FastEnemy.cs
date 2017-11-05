@@ -52,7 +52,6 @@ public class FastEnemy : Enemy
         if(this.hasCharged)
         {
             // Reset target
-            Debug.Log("Reset Target: xDir = " + xDir + ", yDir = " + yDir);
             yDir = (target.position.y - this.transform.position.y);
             xDir = (target.position.x - this.transform.position.x);
             vSquare = Mathf.Pow(xDir, 2) + Mathf.Pow(yDir, 2);
@@ -72,7 +71,6 @@ public class FastEnemy : Enemy
             velocity *= speed;
         }
 
-        Debug.Log("Moving: xDir = " + xDir + ", yDir = " + yDir);
         rb2d.MovePosition(rb2d.position + velocity * Time.deltaTime);
 
     }
@@ -87,4 +85,6 @@ public class FastEnemy : Enemy
         }
         this.hasCharged = true;
     }
+
+    
 }

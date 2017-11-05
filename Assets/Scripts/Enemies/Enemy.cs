@@ -6,8 +6,8 @@ public class Enemy : MonoBehaviour {
 
 	public int playerDamage;
 
-	private Animator animator;                          //Variable of type Animator to store a reference to the enemy's Animator component.
-	private Transform target;                           //Transform to attempt to move toward each turn.
+	public Animator animator;                          //Variable of type Animator to store a reference to the enemy's Animator component.
+	public Transform target;                           //Transform to attempt to move toward each turn.
 	//private bool skipMove; Not used
 
     public Rigidbody2D rb2d;
