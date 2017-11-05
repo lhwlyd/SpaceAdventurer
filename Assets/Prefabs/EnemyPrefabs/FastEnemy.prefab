@@ -90,8 +90,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerDamage: 0
+  animator: {fileID: 0}
+  target: {fileID: 0}
   rb2d: {fileID: 0}
-  speed: 0
+  speed: 4
   circleCollider2d: {fileID: 0}
   explosion: {fileID: 1911405549345840, guid: c99c2d3bf4d474d42935fec33acd75a5, type: 2}
   hasCharged: 1
