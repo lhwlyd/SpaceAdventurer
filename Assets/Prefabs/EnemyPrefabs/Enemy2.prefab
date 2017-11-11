@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 58320080645646256}
   - component: {fileID: 212161362815008340}
   - component: {fileID: 114161741360858888}
+  - component: {fileID: 114165049734294324}
   m_Layer: 8
   m_Name: Enemy2
   m_TagString: Enemy
@@ -90,10 +91,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerDamage: 2
+  animator: {fileID: 0}
+  target: {fileID: 0}
   rb2d: {fileID: 0}
   speed: 3
   circleCollider2d: {fileID: 0}
   explosion: {fileID: 1911405549345840, guid: c99c2d3bf4d474d42935fec33acd75a5, type: 2}
+--- !u!114 &114165049734294324
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1774073386206978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09184491132724d79b52df47284835ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 0
 --- !u!212 &212161362815008340
 SpriteRenderer:
   m_ObjectHideFlags: 1

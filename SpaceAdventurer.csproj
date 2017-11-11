@@ -262,6 +262,7 @@
     <Compile Include="Assets\Scripts\Enemies\DumbEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
     <Compile Include="Assets\Scripts\Enemies\FastEnemy.cs" />
+    <Compile Include="Assets\Scripts\GameControl\ActiveRangeInitializer.cs" />
     <Compile Include="Assets\Scripts\GameControl\BoardManager.cs" />
     <Compile Include="Assets\Scripts\GameControl\GameManager.cs" />
     <Compile Include="Assets\Scripts\GameControl\Loader.cs" />
@@ -269,6 +270,8 @@
     <Compile Include="Assets\Scripts\GameObjectsScripts\Food.cs" />
     <Compile Include="Assets\Scripts\GameObjectsScripts\Wall.cs" />
     <Compile Include="Assets\Scripts\MovingObjects.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\Activatable.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\ActivatingRadar.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\LightController.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\MainCameraManager.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\Player.cs" />

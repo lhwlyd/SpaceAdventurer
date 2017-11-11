@@ -33,10 +33,16 @@ public class Enemy : MonoBehaviour {
         rb2d = GetComponent<Rigidbody2D>();
 	}
 
+    // Shouldn't be overriden. If new check conditions are needed, please write new check fucntions
+    protected bool CheckInactive(){
+        return GameManager.instance.doingSetup || !this.GetComponent<Activatable>().active;
+    }
+
 
     protected virtual void FixedUpdate()
     {
-        if(GameManager.instance.doingSetup){
+
+        if( CheckInactive() ){
             return;
         }
         // Default enemy movement will be to always float towards player.

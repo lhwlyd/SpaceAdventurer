@@ -43,11 +43,12 @@ public class FastEnemy : Enemy
      * reset target once after done charging.)
      * Move towards that position linearly (1 direction/ axis)
      * Stop once at the player's position
-     */ 
+     */
     protected override void FixedUpdate()
     {
-        if (GameManager.instance.doingSetup)
+        if (CheckInactive()){
             return;
+        }
 
         if(this.hasCharged)
         {

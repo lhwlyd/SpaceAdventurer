@@ -133,8 +133,15 @@ public class BoardManager : MonoBehaviour {
         do
         {
             walkableCount = 0;
+            // This is the keyyyyY!!!!! Add a fixed string to the end instead of a randomly generated string
+            // to make sure this change of seed can be replicated later.
+            if( mapGenerator.seed != "" )
+            mapGenerator.seed += "0";
+            
             map = mapGenerator.GenerateMap(mapSize, out centerX, out centerY);
-            foreach (int i in map)
+			Debug.Log("Generated a map with " + mapGenerator.seed);
+
+			foreach (int i in map)
             {
                 if (i == 0)
                 {
@@ -246,7 +253,7 @@ public class BoardManager : MonoBehaviour {
          * unecessary problems and performance issues.
          */
 
-        /*
+        /**
         exitRelocationTimes = 0;
         // Make sure the exit is far away from the player so that player won't skip some level unwantedly.
         while (CheckDistanceBetween(currExit.transform, player.transform) < tooCloseThreshold 
@@ -256,12 +263,13 @@ public class BoardManager : MonoBehaviour {
 			LayoutObjectAtRandom(exit, 1, 1);
             Debug.Log("Too close !");
 		}
-		*/
+        */
 
 
         // If it's still very close to the player, it means this map is probably too small or 
         // weird looking. Generate a new one instead.
         if (CheckDistanceBetween(currExit.transform, player.transform) < tooCloseThreshold){
+            Debug.Log("Exit and player too close!");
             //Destroy(this.player.gameObject);
             //Destroy(this.currExit);
             //this.SetUpScene(level, mapSize);

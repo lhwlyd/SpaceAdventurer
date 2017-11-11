@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
 
+        // Keep only 1 instance of the game manager.
 		if (instance == null) {
 			instance = this;
 		} else if (instance != this) {
@@ -103,33 +104,13 @@ public class GameManager : MonoBehaviour {
         level = 0;
         playerHealth = 100;
         survivedTime = 0;
+        boardScript.mapGenerator.seed = "";
         SceneManager.LoadScene(0);
     }
 
 	public void AddEnemyToList(Enemy enemy){
 		enemies.Add (enemy);
 	}
-
-
-    /*  Deprecated enemy moving method
-	IEnumerator MoveEnemies(){
-		enemiesMoving = true;
-		yield return new WaitForSeconds(turnDelay);
-
-		if(enemies.Count == 0){
-			yield return new WaitForSeconds(turnDelay);
-		}
-
-		for(int i=0; i < enemies.Count; i++){
-			enemies [i].MoveEnemy ();
-			yield return new WaitForSeconds (enemies[i].moveTime);
-		}
-
-		playersTurn = true;
-		enemiesMoving = false;
-	}
-	*/
-
 
 	void OnLevelWasLoaded(int index){
 		level++;

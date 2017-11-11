@@ -25,6 +25,8 @@ public class Player : MovingObjects {
 
     public bool stopped = false;
 
+    private bool interacted = false;
+
 	// Use this for initialization
 	protected override void Start () {
         healthManager = this.GetComponent<PlayerHealth>();
@@ -48,6 +50,9 @@ public class Player : MovingObjects {
         if ( stopped || GameManager.instance.doingSetup) {
             return;
         }
+
+		// Prevent multiple interactions due to the collider being circle/capsule
+		interacted = false;
 
 
 		float moveHorizontal = Input.GetAxis("Horizontal");
@@ -135,8 +140,9 @@ public class Player : MovingObjects {
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-		if (collision.gameObject.GetComponent<Interactive>() != null)
+        if (collision.gameObject.GetComponent<Interactive>() != null && !interacted)
 		{
+            interacted = true;
 			collision.gameObject.SendMessage("Interact", this.gameObject);
 		}
 
