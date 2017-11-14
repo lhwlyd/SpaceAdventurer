@@ -409,10 +409,10 @@ MonoBehaviour:
   restartLevelDelay: 1
   rb2d: {fileID: 0}
   speed: 1
-  rocketFire: {fileID: 1611369444751620, guid: b5b6ac394c6ae4c32a520925a7aa600b, type: 2}
   audioSource: {fileID: 0}
   healthManager: {fileID: 0}
   playerGearManager: {fileID: 0}
+  rocketFire: {fileID: 1611369444751620, guid: b5b6ac394c6ae4c32a520925a7aa600b, type: 2}
   stopped: 0
 --- !u!114 &114393332693391328
 MonoBehaviour:

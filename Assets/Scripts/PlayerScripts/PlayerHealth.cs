@@ -10,7 +10,7 @@ public class PlayerHealth : MonoBehaviour {
 	public Slider healthSlider;                                 // Reference to the UI's health bar.
 	public Image damageImage;                                   // Reference to an image to flash on the screen on being hurt.
 	// public AudioClip deathClip;                                 // The audio clip to play when the player dies.
-	public float flashSpeed = 3f;                               // The speed the damageImage will fade at.
+	public float flashSpeed = 0.5f;                               // The speed the damageImage will fade at.
 	public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
 
 	Animator anim;                                              // Reference to the Animator component.
@@ -49,6 +49,7 @@ public class PlayerHealth : MonoBehaviour {
 			inhaleTime = 0;
             currentHealth -= 1;
             foodText.text = " Oxygen Left : " + currentHealth + " %";
+			characterLightController.UpdateLight(currentHealth);
 
 
 		}
@@ -75,7 +76,11 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     public void AddHp( int amount ){
-        currentHealth += amount;
+        if( currentHealth + amount >= 100){
+            currentHealth = 100;
+        } else {
+			currentHealth += amount;
+		}
         foodText.text = "+" + amount + " Oxygen Left : " + currentHealth + " %";
 
 	}

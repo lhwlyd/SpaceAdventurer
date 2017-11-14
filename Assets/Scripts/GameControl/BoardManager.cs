@@ -129,19 +129,32 @@ public class BoardManager : MonoBehaviour {
 
         /** Make sure there's enough place to put all elements we want on the map.
          */
+        int generateTimes = 0;
         do
         {
             walkableCount = 0;
-            map = mapGenerator.GenerateMap(mapSize, out centerX, out centerY);
-            foreach (int i in map)
+            // This is the keyyyyY!!!!! Add a fixed string to the end instead of a randomly generated string
+            // to make sure this change of seed can be replicated later.
+            if( mapGenerator.seed != "" ){
+				mapGenerator.seed += "0";
+
+			}
+
+			Debug.Log("Seed was" + mapGenerator.seed);
+
+
+			map = mapGenerator.GenerateMap(mapSize, out centerX, out centerY);
+			Debug.Log("Generated a map with " + mapGenerator.seed);
+
+			foreach (int i in map)
             {
                 if (i == 0)
                 {
                     walkableCount += 1;
                 }
             }
-            Debug.Log("generate map once");
-        } while ((float)(walkableCount / mapSize * mapSize) < walkablePercent);
+            generateTimes++;
+        } while ((float)(walkableCount / mapSize * mapSize) < walkablePercent && generateTimes < 20);
 
 
         // Set up the walls and grounds
@@ -245,6 +258,7 @@ public class BoardManager : MonoBehaviour {
          * unecessary problems and performance issues.
          */
 
+        /**
         exitRelocationTimes = 0;
         // Make sure the exit is far away from the player so that player won't skip some level unwantedly.
         while (CheckDistanceBetween(currExit.transform, player.transform) < tooCloseThreshold 
@@ -252,11 +266,15 @@ public class BoardManager : MonoBehaviour {
             exitRelocationTimes++;
             Destroy(currExit);
 			LayoutObjectAtRandom(exit, 1, 1);
+            Debug.Log("Too close !");
 		}
+        */
+
 
         // If it's still very close to the player, it means this map is probably too small or 
         // weird looking. Generate a new one instead.
         if (CheckDistanceBetween(currExit.transform, player.transform) < tooCloseThreshold){
+            Debug.Log("Exit and player too close!");
             //Destroy(this.player.gameObject);
             //Destroy(this.currExit);
             //this.SetUpScene(level, mapSize);
