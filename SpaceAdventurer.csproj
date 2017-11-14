@@ -277,6 +277,7 @@
     <Compile Include="Assets\Scripts\PlayerScripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerGears.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerPositionControllerScript.cs" />
     <Compile Include="Assets\Scripts\UIScripts\Radar.cs" />
   </ItemGroup>

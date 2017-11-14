@@ -38,7 +38,9 @@ public class MapGenerator : MonoBehaviour{
 
 		if(seed == "" ){
 			useRandomSeed = true;
-		}
+        } else{
+            useRandomSeed = false;
+        }
 
 		RandomFillMap ();
 
@@ -97,7 +99,7 @@ public class MapGenerator : MonoBehaviour{
 	void RandomFillMap(){
 		//Based on seed
 		if(useRandomSeed){
-			seed = Time.time.ToString ();
+            seed = System.DateTime.UtcNow.ToString();
 		}
 
 		System.Random psuedoRandom = new System.Random (seed.GetHashCode());

@@ -13,15 +13,17 @@ public class Player : MovingObjects {
 
     public Rigidbody2D rb2d;
 
-    public float speed;
+	public float speed;
 
-    public GameObject rocketFire;
-
-    public AudioSource audioSource;
+	public AudioSource audioSource;
 
     public PlayerHealth healthManager;
 
     public PlayerGears playerGearManager;
+
+	public GameObject rocketFire;
+
+	//public PlayerMovement movementManager;
 
     public bool stopped = false;
 
@@ -32,6 +34,8 @@ public class Player : MovingObjects {
         healthManager = this.GetComponent<PlayerHealth>();
 
         playerGearManager = this.GetComponent<PlayerGears>();
+
+        //movementManager = this.GetComponent<PlayerMovement>();
 
 		animator = GetComponent<Animator> ();
 
@@ -52,67 +56,74 @@ public class Player : MovingObjects {
         }
 
 		// Prevent multiple interactions due to the collider being circle/capsule
+        // Btw, this is not working. I have absolutely no idea why the food points
+        // and damage are counted twice now.
 		interacted = false;
-
 
 		float moveHorizontal = Input.GetAxis("Horizontal");
 
-        //Store the current vertical input in the float moveVertical.
-        float moveVertical = Input.GetAxis("Vertical");
+		//Store the current vertical input in the float moveVertical.
+		float moveVertical = Input.GetAxis("Vertical");
 
 
 		if (moveHorizontal < 0f)
 		{
-            this.animator.SetBool("FacingRight", false);
+			this.animator.SetBool("FacingRight", false);
 
-            // Also change the backpack if it was using left backpack
-            transform.Find("LeftBackpackTransform").GetComponent<TrailRenderer>().time = 0.5f;
+			// Also change the backpack if it was using left backpack
+			transform.Find("LeftBackpackTransform").GetComponent<TrailRenderer>().time = 0.5f;
 			transform.Find("RightBackpackTransform").GetComponent<TrailRenderer>().time = 0;
 
 		}
-		
-        if (moveHorizontal > 0f){
-            this.animator.SetBool("FacingRight", true);
+
+		if (moveHorizontal > 0f)
+		{
+			this.animator.SetBool("FacingRight", true);
 			transform.Find("RightBackpackTransform").GetComponent<TrailRenderer>().time = 0.5f;
 			transform.Find("LeftBackpackTransform").GetComponent<TrailRenderer>().time = 0;
 
-	    }
-		
+		}
 
-        // Rotate
-        this.rb2d.AddTorque( moveHorizontal * -1f, ForceMode2D.Force);
 
-        // Physical implementation: using torque instead of adjusting angle directly.
-        if (moveVertical > 0f)
-        {
-            this.animator.SetBool("Moving", true);
-            this.rb2d.AddForce(this.transform.up * speed);
+		// Rotate
+		this.rb2d.AddTorque(moveHorizontal * -1f, ForceMode2D.Force);
 
-        } else {
-            
-            this.animator.SetBool("Moving", false);
-        }
+		// Physical implementation: using torque instead of adjusting angle directly.
+		if (moveVertical > 0f)
+		{
+			this.animator.SetBool("Moving", true);
+			this.rb2d.AddForce(this.transform.up * speed);
 
-		if (Input.GetKeyDown("space") )
+		}
+		else
+		{
+
+			this.animator.SetBool("Moving", false);
+		}
+
+		if (Input.GetKeyDown("space"))
 		{
 			FireRocket();
 		}
 
-        if( Input.GetKeyDown("r") ){
-            playerGearManager.LaunchProjectile( this.gameObject.transform, this.gameObject.transform.rotation );
-        }
+		if (Input.GetKeyDown("r"))
+		{
+			playerGearManager.LaunchProjectile(this.gameObject.transform, this.gameObject.transform.rotation);
+		}
+    }
 
-	}
-    /**
+	/**
      * Create a rocket fire at opposite to the moving direction of the player.
      */
-    private void FireRocket(){
-        GameObject fire = Instantiate(rocketFire, new Vector3(this.transform.position.x, this.transform.position.y, 0f), this.transform.rotation) as GameObject;
+	private void FireRocket()
+	{
+		GameObject fire = Instantiate(rocketFire, new Vector3(this.transform.position.x,
+																	 this.transform.position.y, 0f), this.transform.rotation) as GameObject;
 		rb2d.AddForce(100 * speed * this.transform.up);
-		fire.transform.Rotate(0,0,180);
-        fire.transform.SetParent(this.transform);
-        Destroy(fire, 1f);
-    }
+		fire.transform.Rotate(0, 0, 180);
+		fire.transform.SetParent(this.transform);
+		Destroy(fire, 1f);
+	}
 
 	private void Restart(){
 
@@ -154,7 +165,6 @@ public class Player : MovingObjects {
 			enabled = false;
 
 			MoveToExit(collision.gameObject.transform);
-
 
         }
 

@@ -135,10 +135,15 @@ public class BoardManager : MonoBehaviour {
             walkableCount = 0;
             // This is the keyyyyY!!!!! Add a fixed string to the end instead of a randomly generated string
             // to make sure this change of seed can be replicated later.
-            if( mapGenerator.seed != "" )
-            mapGenerator.seed += "0";
-            
-            map = mapGenerator.GenerateMap(mapSize, out centerX, out centerY);
+            if( mapGenerator.seed != "" ){
+				mapGenerator.seed += "0";
+
+			}
+
+			Debug.Log("Seed was" + mapGenerator.seed);
+
+
+			map = mapGenerator.GenerateMap(mapSize, out centerX, out centerY);
 			Debug.Log("Generated a map with " + mapGenerator.seed);
 
 			foreach (int i in map)
