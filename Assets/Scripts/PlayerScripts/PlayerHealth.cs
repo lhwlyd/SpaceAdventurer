@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour {
 	public Image damageImage;                                   // Reference to an image to flash on the screen on being hurt.
 	// public AudioClip deathClip;                                 // The audio clip to play when the player dies.
 	public float flashSpeed = 0.5f;                               // The speed the damageImage will fade at.
-	public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
+    public Color flashColour = new Color(1f, 0f, 0f, 1f);
 
 	Animator anim;                                              // Reference to the Animator component.
 	AudioSource playerAudio;                                    // Reference to the AudioSource component.
@@ -55,10 +55,13 @@ public class PlayerHealth : MonoBehaviour {
 		}
 
         if( damaged ){
+            Debug.Log("Damaged!");
             damageImage.color = flashColour;
-        } else {
+        } else { // Player was just damaged, and so should be fading
             // Fade it
+            Debug.Log("Fading");
             damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime );
+            
         }
 
 
@@ -72,16 +75,19 @@ public class PlayerHealth : MonoBehaviour {
         healthSlider.value = currentHealth;
         characterLightController.UpdateLight(currentHealth);
 
-        foodText.text = "-" + amount + " Oxygen Left : " + currentHealth + " %";
+        foodText.text = "Lost " + amount + " oxygen...\nOxygen Left : " + currentHealth + " %";
     }
 
     public void AddHp( int amount ){
-        if( currentHealth + amount >= 100){
+        /*if( currentHealth + amount >= 100){
             currentHealth = 100;
         } else {
 			currentHealth += amount;
-		}
-        foodText.text = "+" + amount + " Oxygen Left : " + currentHealth + " %";
+		}*/
+        currentHealth += amount;
+        if (currentHealth >= 100)
+            currentHealth = 100;
+        foodText.text = "Gained " + amount + " oxygen!\nOxygen Left : " + currentHealth + " %";
 
 	}
 
