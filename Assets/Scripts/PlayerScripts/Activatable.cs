@@ -6,6 +6,7 @@ public class Activatable : MonoBehaviour {
 
 
     public bool active = false;
+    private bool doingActive = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,9 +26,18 @@ public class Activatable : MonoBehaviour {
 
     public IEnumerator SetActive( bool active ){
         this.active = active;
-        //yield return new WaitForSeconds(3);
-        //this.active = false;
-        yield return null;
+        if (doingActive)
+        {
+            yield return null;
+        }
+        else {
+            doingActive = true;
+			yield return new WaitForSeconds(5);
+			this.active = false;
+            doingActive = false;
+			yield return null;
+        }
+
     }
 }
 

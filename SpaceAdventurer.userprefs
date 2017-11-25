@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{60F2BC01-A827-CCAE-A217-A19B116C16A9}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerScripts/PlayerMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerScripts/Activatable.cs">
     <Files>
       <File FileName="Assets/Scripts/GameControl/MapGenerator.cs" Line="23" Column="5" />
       <File FileName="Assets/Scripts/GameControl/BoardManager.cs" Line="146" Column="28" />
@@ -11,8 +11,10 @@
       <File FileName="Assets/Scripts/PlayerScripts/LightController.cs" Line="22" Column="19" />
       <File FileName="Assets/Scripts/GameObjectsScripts/Food.cs" Line="7" Column="21" />
       <File FileName="Assets/Scripts/EffectsScripts/Healing.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PlayerScripts/Player.cs" Line="53" Column="10" />
-      <File FileName="Assets/Scripts/PlayerScripts/PlayerMovement.cs" Line="30" Column="9" />
+      <File FileName="Assets/Scripts/PlayerScripts/Player.cs" Line="128" Column="25" />
+      <File FileName="Assets/Scripts/PlayerScripts/PlayerMovement.cs" Line="14" Column="2" />
+      <File FileName="Assets/Scripts/GameControl/ActiveRangeInitializer.cs" Line="14" Column="51" />
+      <File FileName="Assets/Scripts/PlayerScripts/Activatable.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.SpaceAdventurer PreferredExecutionTarget="Unity.Editor" />

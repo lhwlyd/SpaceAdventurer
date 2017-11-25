@@ -274,6 +274,7 @@
     <Compile Include="Assets\Scripts\PlayerScripts\ActivatingRadar.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\LightController.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\MainCameraManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\NewMonoBehaviour.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerGears.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerHealth.cs" />
